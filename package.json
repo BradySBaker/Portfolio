@@ -5,7 +5,7 @@
   "main": "tailwind.config.js",
   "scripts": {
     "build-all": "npm-run-all --parallel build-css build",
-    "build": "webpack --mode production --watch",
+    "build": "webpack --watch",
     "build-css": "npx tailwind build -i client/src/styles.css -o client/dist/styles.css --watch"
   },
   "author": "",
