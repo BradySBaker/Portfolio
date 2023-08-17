@@ -1,27 +1,28 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
+
+import styles from '../cssModules/smallWidgetsStyles.modules.css';
 
 const ProfileIcon = () => {
+  const profileIcon = useRef();
+
   useEffect(() => {
-    const profilePhoto = document.getElementById('profile-icon');
     const handleScroll = () => {
-      const maxScroll = profilePhoto.offsetHeight * 2;
+      const maxScroll = profileIcon.current.offsetHeight * 2;
       const scrollPosition = window.pageYOffset;
-      console.log(scrollPosition + maxScroll)
       if (scrollPosition > maxScroll) {
         return;
       }
-      profilePhoto.style.backgroundPositionY = `${-scrollPosition * .3}px`; // Adjust the factor for desired scrolling speed
+      profileIcon.current.style.backgroundPositionY = `${-scrollPosition * .3}px`; // Adjust the factor for desired scrolling speed
     };
 
     window.addEventListener('scroll', handleScroll);
 
     return () => {
-      console.log('occured');
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
   return (
-    <div id="profile-icon">
+    <div id={styles['profile-icon']} ref={profileIcon}>
       <img src="./images/me.png"/>
     </div>
   )
