@@ -1,0 +1,56 @@
+#home {
+  position: relative;
+}
+
+#mainContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  margin-bottom: 5rem;
+}
+
+#mainHeaders {
+  margin-left: 50px;
+}
+
+#home h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 5vw;
+  white-space: nowrap;
+}
+
+#home h2 {
+  font-weight: 300;
+  font-size: 4vw;
+  opacity: .8;
+  margin: 0;
+}
+
+#home h3 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.5vw;
+  opacity: .7;
+}
+
+@media (max-width: 500px) { /* Mobile view */
+  #mainContainer {
+    flex-direction: column;
+  }
+  #mainHeaders {
+    margin-left: 0;
+    text-align: center;
+  }
+  #home h1 {
+    font-size: 8vw;
+  }
+  #home h2 {
+    font-size: 7vw;
+  }
+  #home h3 {
+    font-size: 3.5vw;
+  }
+}

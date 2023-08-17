@@ -4,10 +4,11 @@
 
 body {
   font-family: 'Montserrat';
+  color: white;
 }
 
 #app {
-  background: linear-gradient(to bottom, #001C30, black);
+  background: linear-gradient(to bottom, #001C30, black 15%);
   height: 5000px;
   width: 100vw;
 }

@@ -2,18 +2,23 @@ import React from 'react';
 
 import ProfileIcon from './smallWidgets/ProfileIcon.jsx';
 
+import styles from './cssModules/homePage.module.css';
+
 const HomePage = () => {
   return (
-    <div id='homePage' className='relative text-center'>
-      <div className='mb-6'>
-        <ProfileIcon />
+    <div id={styles.home}>
+      <div id={styles.mainContainer}>
+        <div>
+          <ProfileIcon />
+        </div>
+        <div id={styles.mainHeaders}>
+          <h1>Brady Baker</h1>
+          <h2>Software Developer</h2>
+        </div>
       </div>
-      <div className='text-white'>
-        <h1 className='font-semibold text-4xl sm:text-7xl'>Brady Baker</h1>
-        <h2 className='font-light opacity-70 text-2xl sm:text-4xl mt-2 sm:mt-10'>Software Developer</h2>
-      </div>
+      <h3>&quot;Embracing Challenges, Overcoming Roadblocks, Engineering Solutions&quot;</h3>
     </div>
-  )
-}
+  );
+};
 
 export default HomePage;
