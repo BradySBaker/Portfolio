@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-import styles from '../cssModules/smallWidgetsStyles.modules.css';
+import styles from '../cssModules/smallWidgetsStyles.module.css';
 
 const ProfileIcon = () => {
   const profileIcon = useRef();
