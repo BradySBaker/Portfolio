@@ -6,7 +6,7 @@ import ProfileIcon from './smallWidgets/ProfileIcon.jsx';
 const App = () => {
 
   return (
-    <div id="app" className="w-full">
+    <div id="app">
       <ProfileIcon />
     </div>
   );

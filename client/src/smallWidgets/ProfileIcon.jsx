@@ -16,7 +16,6 @@ const ProfileIcon = () => {
     window.addEventListener('scroll', handleScroll);
 
     return () => {
-      console.log('occured');
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
