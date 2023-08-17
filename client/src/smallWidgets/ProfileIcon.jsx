@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 
 const ProfileIcon = () => {
   useEffect(() => {
-    const profilePhoto = document.getElementById('profile-photo');
+    const profilePhoto = document.getElementById('profile-icon');
     const handleScroll = () => {
       const maxScroll = profilePhoto.offsetHeight * 2;
       const scrollPosition = window.pageYOffset;
