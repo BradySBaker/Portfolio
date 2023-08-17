@@ -2,16 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Montserrat';
+}
+
 #app {
-  background: linear-gradient(to bottom, #001C30, black);
+  background: linear-gradient(to bottom, #001C30, black 80vh);
   height: 5000px;
 }
 
+/* === Home Page === */
 #profile-icon {
   position: relative;
-  border-radius: 50px;
-  width: 200px;
-  height: 200px;
+  border-radius: 20%;
+  width: 8rem;
+  height: 10rem;
   background-image: url('./images/lake.jpg');
   background-size: 400%;
   background-position: top;

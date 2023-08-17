@@ -4,7 +4,6 @@ module.exports = {
   },
   mode: 'jit',
   content: [
-    './client/dist/**/*.html',
     './client/src/**/*.{js,jsx}'
   ],
   theme: {

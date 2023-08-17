@@ -1,13 +1,14 @@
 import React, {useEffect} from 'react';
 import { createRoot } from 'react-dom/client';
 
-import ProfileIcon from './smallWidgets/ProfileIcon.jsx';
+import ProfileIcon from "./smallWidgets/ProfileIcon.jsx";
+import HomePage from './HomePage.jsx';
 
 const App = () => {
 
   return (
     <div id="app" className="w-full">
-      <ProfileIcon />
+      <HomePage />
     </div>
   );
 };
