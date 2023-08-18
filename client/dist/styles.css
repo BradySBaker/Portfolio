@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Montserrat';
+  color: white;
+}
+
+#app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #001C30, black 15%);
+  height: 5000px;
+  width: 100%;
+}

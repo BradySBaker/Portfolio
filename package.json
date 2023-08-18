@@ -4,7 +4,8 @@
   "description": "## info This repository contains code to run my personal website containing imagery and information on projects I have built.",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack --watch"
+    "build": "webpack --watch",
+    "lint": "eslint client/src/*.jsx"
   },
   "author": "",
   "license": "ISC",

@@ -1,6 +1,6 @@
-import React, {useEffect, useRef} from 'react';
+import React, { useEffect, useRef } from 'react';
 
-import styles from '../cssModules/smallWidgetsStyles.modules.css';
+import styles from '../cssModules/smallWidgetsStyles.module.css';
 
 const ProfileIcon = () => {
   const profileIcon = useRef();
@@ -12,7 +12,7 @@ const ProfileIcon = () => {
       if (scrollPosition > maxScroll) {
         return;
       }
-      profileIcon.current.style.backgroundPositionY = `${-scrollPosition * .3}px`; // Adjust the factor for desired scrolling speed
+      profileIcon.current.style.backgroundPositionY = `${-scrollPosition * 0.3}px`; // Adjust the factor for desired scrolling speed
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -25,7 +25,7 @@ const ProfileIcon = () => {
     <div id={styles['profile-icon']} ref={profileIcon}>
       <img src="./images/me.png"/>
     </div>
-  )
-}
+  );
+};
 
 export default ProfileIcon;
