@@ -53,3 +53,7 @@
     font-size: 3vw;
   }
 }
+
+#scrollAnimator {
+  left: 20%;
+}
