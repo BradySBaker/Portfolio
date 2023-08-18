@@ -53,3 +53,8 @@
     font-size: 3vw;
   }
 }
+
+#laptop {
+  width: 50vw;
+  left: 20%;
+}

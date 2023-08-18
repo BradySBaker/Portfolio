@@ -1,0 +1,19 @@
+#widget {
+  margin-top: 25vw;
+}
+
+#widget h1 {
+  font-size: 5vw;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#underline {
+  position: absolute;
+  width: 5%;
+  height: 1vw;
+  background-color: #0073cf;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
