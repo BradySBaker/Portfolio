@@ -40,12 +40,12 @@
   border: none;
   font-size: 1.5vw;
   opacity: .7;
-  transition: opacity, font-weight 0.3s ease-out;
+  transition: opacity .4s ease;
 }
 
 .top-buttons:hover {
   opacity: 1;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 @media (max-width: 500px) { /* Mobile view */
