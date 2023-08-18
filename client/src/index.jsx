@@ -12,6 +12,8 @@ const App = () => {
       <TopBar />
       <HomePage />
       <ProjectPage />
+      <div><a href="https://www.freepik.com/free-vector/home-screen-concept-illustration_11906660.htm#query=phone&position=0&from_view=author">Image by storyset</a> on Freepik</div>
+      <div>Laptop Art from GrafixM</div>
     </div>
   );
 };

@@ -1,15 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import styles from '../cssModules/smallWidgetsStyles.module.css';
 
-let frameNum = 0;
-
-const positionMap = { 780: 1, 685: 3, 575: 5, 485: 7, 380: 9, 280: 11 };
-let currentSmoothFrameCall = 0;
-
-let lastTimestamp;
-
-const Laptop = () => {
-  const laptopImg = useRef();
+const ScrollAnimator = ({ src, positionMap, width }) => {
+  let frameNum = 0;
+  let currentSmoothFrameCall = 0;
+  let lastTimestamp;
+  const img = useRef();
 
   const smoothFrames = (newFrame, callNum) => {
     if (callNum !== currentSmoothFrameCall) {
@@ -26,14 +22,14 @@ const Laptop = () => {
       } else {
         frameNum++;
       }
-      laptopImg.current.src = `./images/laptop/${frameNum}.png`;
+      img.current.src = './images/' + src + '/' + frameNum + '.png';
     }
     window.requestAnimationFrame(() => smoothFrames(newFrame, callNum, lastTimestamp));
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      const position = laptopImg.current.getBoundingClientRect().top;
+      const position = img.current.getBoundingClientRect().top;
       let newFrame;
       for (const num in positionMap) {
         if (position <= num) {
@@ -57,13 +53,14 @@ const Laptop = () => {
   return (
     <div>
       <img
-        id={styles.laptop}
-        src={`./images/laptop/${frameNum}.png`}
-        ref={laptopImg}
-        alt="Laptop"
+        id={styles.scrollAnimator}
+        src={'./images/' + src + '/' + frameNum + '.png'}
+        ref={img}
+        style={{ width }}
+        alt="Missing Src"
       />
     </div>
   );
 };
 
-export default Laptop;
+export default ScrollAnimator;

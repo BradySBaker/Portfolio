@@ -8,12 +8,21 @@
   text-align: center;
 }
 
+#widget h3 {
+  font-size: 2vw;
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+  opacity: .6;
+  margin-top: 7%;
+}
+
 #underline {
   position: absolute;
   width: 5%;
   height: 1vw;
   background-color: #0073cf;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -20%);
   border-radius: 10px;
 }
