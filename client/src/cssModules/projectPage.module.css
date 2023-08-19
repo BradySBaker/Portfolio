@@ -26,3 +26,7 @@
   transform: translate(-50%, -20%);
   border-radius: 10px;
 }
+
+#laptop {
+  transform: translateX(-12vw);
+}

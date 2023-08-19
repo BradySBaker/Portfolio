@@ -10,11 +10,15 @@ const phonePositionMap = { 780: 1, 685: 4, 575: 6, 485: 8, 380: 10, 280: 13 };
 const ProjectPage = () => {
   return (
     <div id={styles.widget}>
-    <h1>Projects</h1>
-    <div id={styles.underline}/>
-    <h3>Below, are some of my finished projects</h3>
-    <ScrollAnimator src={'laptop'} positionMap={laptopPositionMap} width={'50vw'}/>
-    <ScrollAnimator src={'phone'} positionMap={phonePositionMap} width={'20vw'}/>
+      <h1>Projects</h1>
+      <div id={styles.underline}/>
+      <h3>Below, are some of my finished projects</h3>
+      <div id={styles.laptop}>
+      <ScrollAnimator src={'laptop'} positionMap={laptopPositionMap} width={'55vw'}/>
+      </div>
+      <div id={styles.phone} style={{ transform: 'translateY(-20vw);' }}>
+        <ScrollAnimator src={'phone'} positionMap={phonePositionMap} width={'28vw'}/>
+      </div>
   </div>
   );
 };
