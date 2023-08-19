@@ -28,5 +28,53 @@
 }
 
 #laptop {
-  transform: translateX(-12vw);
+}
+
+#phone {
+  width: fit-content;
+  transform: translateX(10vw);
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+}
+
+#widget h2 {
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+
+#widget p {
+  max-width: 50vw;
+  font-size: 2vw;
+  font-weight: 300;
+  color: rgb(192, 192, 192);
+}
+
+#phone-description {
+  margin-top: 10vw;
+}
+
+#widget h4 {
+  font-weight: 500;
+  font-size: 1.8vw;
+  opacity: .9;
+}
+
+.contributions {
+  background-color: #0073cf;
+  font-size: 1.5vw;
+  opacity: .8;
+  padding: 10px;
+  white-space: nowrap;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+#contribution-list {
+  display: flex;
+  max-width: 50vw;
+  flex-wrap: wrap;
 }
