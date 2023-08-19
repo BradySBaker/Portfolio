@@ -16,8 +16,8 @@ const ProjectPage = () => {
       <div id={styles.underline}/>
       <h3>Below are some of my finished projects</h3>
       <div className={styles.project}>
-        <div id={styles.phone} style={{ transform: 'translateY(-20vw)' }}>
-          <ScrollAnimator src={'phone'} positionMap={phonePositionMap} width={'28vw'}/>
+        <div id={styles.phone}>
+          <ScrollAnimator src={'phone'} positionMap={phonePositionMap} width={'28vw'} gif={'./images/projects/toyshare.gif'} end={13}/>
         </div>
         <div id={styles['phone-description']}>
           <h2>Toy Share</h2>

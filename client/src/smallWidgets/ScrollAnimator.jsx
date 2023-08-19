@@ -1,13 +1,20 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from '../cssModules/smallWidgetsStyles.module.css';
 
-const ScrollAnimator = ({ src, positionMap, width }) => {
+const ScrollAnimator = ({ src, positionMap, width, gif, end }) => {
+  const [gifImage, setGifImage] = useState(null);
+
   let frameNum = 0;
   let currentSmoothFrameCall = 0;
   let lastTimestamp;
   const img = useRef();
 
   const smoothFrames = (newFrame, callNum) => {
+    if (frameNum === end && !gifImage) {
+      setGifImage(<img src={gif} id={styles.phoneImg} style={{ width }}/>);
+    } else {
+      setGifImage(null);
+    }
     if (callNum !== currentSmoothFrameCall) {
       return;
     }
@@ -59,6 +66,7 @@ const ScrollAnimator = ({ src, positionMap, width }) => {
         style={{ width }}
         alt="Missing Src"
       />
+      {gifImage}
     </div>
   );
 };

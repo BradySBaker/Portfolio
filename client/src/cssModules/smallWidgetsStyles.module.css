@@ -57,3 +57,14 @@
 #scrollAnimator {
   left: 20%;
 }
+
+#phoneImg {
+  position: absolute;
+  transform: translate(-107%, 3.4%);
+  animation: fadeIn .5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
