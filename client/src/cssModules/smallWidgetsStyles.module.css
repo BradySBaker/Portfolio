@@ -48,32 +48,48 @@
   font-weight: 300;
 }
 
-@media (max-width: 500px) { /* Mobile view */
-  .top-buttons {
-    font-size: 3vw;
-  }
+#phone-animator {
+  left: 20%;
+  width: 28vw;
 }
 
-#scrollAnimator {
+#laptop-animator {
   left: 20%;
+  width: 68vw;
 }
 
 #phoneImg {
   position: absolute;
   transform: translate(-107%, 3%);
   animation: fadeIn .5s;
+  width: 28vw;
 }
 
 #laptopImg {
   position: absolute;
-  transform: translate(-154.6%, 35%);
-  max-width: 48.3%;
-  min-width: 48.3%;
+  transform: translate(-154.1%, 35%);
+  width: 33vw;
   animation: fadeIn .5s;
-  border-radius: 5px;
+  border-radius: .3vw;
 }
 
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+
+@media (max-width: 500px) { /* Mobile view */
+  .top-buttons {
+    font-size: 3vw;
+  }
+  #phone-animator, #phoneImg {
+    width: 55vw;
+  }
+  #laptop-animator {
+    width: 120vw;
+  }
+  #laptopImg {
+    width: 58vw;
+  }
 }

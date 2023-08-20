@@ -4,18 +4,17 @@ import styles from '../cssModules/smallWidgetsStyles.module.css';
 const laptopPositionMap = { 780: 1, 685: 3, 575: 5, 485: 7, 380: 9, 280: 11 };
 const phonePositionMap = { 780: 1, 685: 4, 575: 6, 485: 8, 380: 10, 280: 13 };
 
-const ScrollAnimator = ({ src, width, gif, phone }) => {
+const ScrollAnimator = ({ src, gif, phone }) => {
   const [gifImage, setGifImage] = useState(null);
 
   let frameNum = 0;
   let currentSmoothFrameCall = 0;
   let lastTimestamp;
   const img = useRef();
-
   const smoothFrames = (newFrame, callNum) => {
     const end = phone ? 13 : 11;
     if (frameNum === end && !gifImage) {
-      setGifImage(<img src={gif} id={phone ? styles.phoneImg : styles.laptopImg } style={{ width }}/>);
+      setGifImage(<img src={gif} id={phone ? styles.phoneImg : styles.laptopImg }/>);
     } else {
       setGifImage(null);
     }
@@ -65,10 +64,9 @@ const ScrollAnimator = ({ src, width, gif, phone }) => {
   return (
     <div>
       <img
-        id={styles.scrollAnimator}
+        id={phone ? styles['phone-animator'] : styles['laptop-animator']}
         src={'./images/' + src + '/' + frameNum + '.png'}
         ref={img}
-        style={{ width }}
         alt="Missing Src"
       />
       {gifImage}
