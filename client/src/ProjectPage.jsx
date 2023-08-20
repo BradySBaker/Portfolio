@@ -4,9 +4,6 @@ import ScrollAnimator from './smallWidgets/ScrollAnimator.jsx';
 
 import styles from './cssModules/projectPage.module.css';
 
-const laptopPositionMap = { 780: 1, 685: 3, 575: 5, 485: 7, 380: 9, 280: 11 };
-const phonePositionMap = { 780: 1, 685: 4, 575: 6, 485: 8, 380: 10, 280: 13 };
-
 const toyShareContributions = ['Map Feature', 'Individual Toy Page', 'Toy Distance', 'Toy Locations', 'All Toy Backend Routes'];
 const fecContributions = ['Review List', 'Lazy Loading', 'Sort Reviews', 'Filter Reviews', 'Post Image Review', 'Review API fetch'];
 
@@ -18,7 +15,7 @@ const ProjectPage = () => {
       <h3>Below are some of my finished projects</h3>
       <div className={styles.project}>
         <div id={styles.phone}>
-          <ScrollAnimator src={'phone'} positionMap={phonePositionMap} width={'28vw'} gif={'./images/projects/toyshare.gif'} end={13}/>
+          <ScrollAnimator src={'phone'} width={'28vw'} gif={'./images/projects/toyshare.gif'} phone={true}/>
         </div>
         <div id={styles['phone-description']}>
           <h2>Toy Share</h2>
@@ -37,7 +34,7 @@ const ProjectPage = () => {
       </div>
       <div className={styles.project}>
         <div id={styles.laptop}>
-        <ScrollAnimator src={'laptop'} positionMap={laptopPositionMap} width={'65vw'}/>
+        <ScrollAnimator src={'laptop'} width={'65vw'} gif={'./images/projects/fec.gif'}/>
         </div>
         <div id={styles['laptop-description']}>
           <h2>Grace Outfitters</h2>
@@ -46,7 +43,7 @@ const ProjectPage = () => {
           </p>
           <h4>My Contributions</h4>
           <div id={styles['contribution-list']}>
-            {toyShareContributions.map((curContr) => {
+            {fecContributions.map((curContr) => {
               return (
                 <div key={curContr} className={styles.contributions}>{curContr}</div>
               );

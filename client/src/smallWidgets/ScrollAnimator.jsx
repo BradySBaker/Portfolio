@@ -1,7 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from '../cssModules/smallWidgetsStyles.module.css';
 
-const ScrollAnimator = ({ src, positionMap, width, gif, end }) => {
+const laptopPositionMap = { 780: 1, 685: 3, 575: 5, 485: 7, 380: 9, 280: 11 };
+const phonePositionMap = { 780: 1, 685: 4, 575: 6, 485: 8, 380: 10, 280: 13 };
+
+const ScrollAnimator = ({ src, width, gif, phone }) => {
   const [gifImage, setGifImage] = useState(null);
 
   let frameNum = 0;
@@ -10,8 +13,9 @@ const ScrollAnimator = ({ src, positionMap, width, gif, end }) => {
   const img = useRef();
 
   const smoothFrames = (newFrame, callNum) => {
+    const end = phone ? 13 : 11;
     if (frameNum === end && !gifImage) {
-      setGifImage(<img src={gif} id={styles.phoneImg} style={{ width }}/>);
+      setGifImage(<img src={gif} id={phone ? styles.phoneImg : styles.laptopImg } style={{ width }}/>);
     } else {
       setGifImage(null);
     }
@@ -38,6 +42,7 @@ const ScrollAnimator = ({ src, positionMap, width, gif, end }) => {
     const handleScroll = () => {
       const position = img.current.getBoundingClientRect().top;
       let newFrame;
+      const positionMap = phone ? phonePositionMap : laptopPositionMap;
       for (const num in positionMap) {
         if (position <= num) {
           newFrame = positionMap[num];

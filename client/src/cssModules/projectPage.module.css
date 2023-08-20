@@ -58,7 +58,7 @@
 }
 
 #laptop-description {
-  transform: translate(-8vw, -1vw);
+  transform: translate(-13vw, -1vw);
 }
 
 #widget h4 {
@@ -69,12 +69,12 @@
 
 .contributions {
   background-color: #0073cf;
-  font-size: 1vw;
+  font-size: .8vw;
   opacity: .8;
-  padding: 1vw;
+  padding: .8vw;
   white-space: nowrap;
-  margin-right: 2vw;
-  margin-bottom: 2vw;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
   border-radius: 20px;
 }
 
