@@ -28,6 +28,7 @@
 }
 
 #laptop {
+  transform: translateX(-8vw);
 }
 
 #phone {
@@ -56,6 +57,10 @@
   margin-top: 10vw;
 }
 
+#laptop-description {
+  transform: translate(-8vw, -1vw);
+}
+
 #widget h4 {
   font-weight: 500;
   font-size: 1.8vw;
@@ -64,17 +69,18 @@
 
 .contributions {
   background-color: #0073cf;
-  font-size: 1.5vw;
+  font-size: 1vw;
   opacity: .8;
-  padding: 10px;
+  padding: 1vw;
   white-space: nowrap;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
   border-radius: 20px;
 }
 
 #contribution-list {
   display: flex;
   max-width: 50vw;
+  min-width: 40vw;
   flex-wrap: wrap;
 }

@@ -60,7 +60,7 @@
 
 #phoneImg {
   position: absolute;
-  transform: translate(-107%, 3.4%);
+  transform: translate(-107%, 3%);
   animation: fadeIn .5s;
 }
 

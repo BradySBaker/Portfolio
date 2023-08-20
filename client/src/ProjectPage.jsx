@@ -8,6 +8,7 @@ const laptopPositionMap = { 780: 1, 685: 3, 575: 5, 485: 7, 380: 9, 280: 11 };
 const phonePositionMap = { 780: 1, 685: 4, 575: 6, 485: 8, 380: 10, 280: 13 };
 
 const toyShareContributions = ['Map Feature', 'Individual Toy Page', 'Toy Distance', 'Toy Locations', 'All Toy Backend Routes'];
+const fecContributions = ['Review List', 'Lazy Loading', 'Sort Reviews', 'Filter Reviews', 'Post Image Review', 'Review API fetch'];
 
 const ProjectPage = () => {
   return (
@@ -36,7 +37,22 @@ const ProjectPage = () => {
       </div>
       <div className={styles.project}>
         <div id={styles.laptop}>
-        <ScrollAnimator src={'laptop'} positionMap={laptopPositionMap} width={'55vw'}/>
+        <ScrollAnimator src={'laptop'} positionMap={laptopPositionMap} width={'65vw'}/>
+        </div>
+        <div id={styles['laptop-description']}>
+          <h2>Grace Outfitters</h2>
+          <p>
+            Grace Outfitters is a web app displaying relevant information for a single product in the catalog of an online retailer. It is composed of omposed of Product Overview, Ratings & Reviews, Questions & Answers, and Related Items & Outfit Creation
+          </p>
+          <h4>My Contributions</h4>
+          <div id={styles['contribution-list']}>
+            {toyShareContributions.map((curContr) => {
+              return (
+                <div key={curContr} className={styles.contributions}>{curContr}</div>
+              );
+            })}
+          </div>
+
         </div>
         <h2></h2>
       </div>
