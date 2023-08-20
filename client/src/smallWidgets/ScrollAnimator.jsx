@@ -62,7 +62,7 @@ const ScrollAnimator = ({ src, gif, phone }) => {
   }, []);
 
   return (
-    <div>
+    <div style={{ overflow: 'hidden', maxWidth: '100vw' }}>
       <img
         id={phone ? styles['phone-animator'] : styles['laptop-animator']}
         src={'./images/' + src + '/' + frameNum + '.png'}

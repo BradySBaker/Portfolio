@@ -88,8 +88,11 @@
   }
   #laptop-animator {
     width: 120vw;
+    transform: translateX(-10vw);
   }
   #laptopImg {
-    width: 58vw;
+    width: 58.2vw;
+    transform: translate(-51.1%, -174%);
+    border-radius: 1vw;
   }
 }
