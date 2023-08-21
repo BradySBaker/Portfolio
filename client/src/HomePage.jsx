@@ -17,6 +17,7 @@ const HomePage = () => {
         </div>
       </div>
       <h3>&quot;Embracing Challenges, Overcoming Roadblocks, Engineering Solutions&quot;</h3>
+      <img src='./images/arrow-icon.gif' id={styles.arrow}/>
     </div>
   );
 };

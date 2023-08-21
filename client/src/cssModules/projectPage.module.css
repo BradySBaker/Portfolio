@@ -3,13 +3,13 @@
 }
 
 #widget h1 {
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: bolder;
   text-align: center;
 }
 
 #widget h3 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 100;
   font-style: italic;
   text-align: center;
@@ -19,8 +19,8 @@
 
 #underline {
   position: absolute;
-  width: 5%;
-  height: 1vw;
+  width: 3%;
+  height: .5vw;
   background-color: #0073cf;
   left: 50%;
   transform: translate(-50%, -20%);
@@ -42,8 +42,23 @@
 }
 
 #widget h2 {
+  position: relative;
+  width: fit-content;
   font-weight: bold;
   font-size: 2.5vw;
+  border: 4px solid #0073cf;
+  background-color: #0072cf27;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 5px;
+  user-select: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#widget h2:hover {
+  background-color: #0073cf;
 }
 
 #widget p {
@@ -55,10 +70,11 @@
 
 #phone-description {
   margin-top: 10vw;
+  transform: translateX(-10vw);
 }
 
 #laptop-description {
-  transform: translate(-13vw, -1vw);
+  transform: translate(-17vw, -1vw);
 }
 
 #widget h4 {
@@ -68,10 +84,9 @@
 }
 
 .contributions {
-  background-color: #0073cf;
-  font-size: .8vw;
-  opacity: .8;
-  padding: .8vw;
+  background-color: #0072cf8c;
+  font-size: .7vw;
+  padding: .7vw;
   white-space: nowrap;
   margin-right: 1vw;
   margin-bottom: 1vw;
@@ -95,7 +110,7 @@
     transform: translateX(0);
   }
   #phone-description {
-    transform: translateY(-20vw);
+    transform: translate(0, -20vw);
     margin: 0;
   }
   #laptop-description {
@@ -104,6 +119,7 @@
   #widget p {
     font-size: 4vw;
     max-width: 90vw;
+    transform: translateX(5vw);
   }
   #widget h2 {
     font-size: 6vw;
