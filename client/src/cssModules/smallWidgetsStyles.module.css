@@ -79,7 +79,7 @@
 }
 
 
-@media screen and (min-height: calc(100vw / .7)) {
+@media screen and (min-height: calc(100vw / .7)) { /* Mobile view */
   .top-buttons {
     font-size: 3vw;
   }

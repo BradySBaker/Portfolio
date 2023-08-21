@@ -34,6 +34,23 @@ const AboutContact = () => {
             </div>
         </div>
       </div>
+      <h1 className='page-header' style={{ marginTop: '7vw' }}>Contact</h1>
+      <div className='underline' />
+      <div id={styles['contact-container']}>
+        <>
+        <h3>Email Me At: </h3>
+          <a href='mailto: bradybaker.dev@gmail.com'>bradybaker.dev@gmail.com</a>
+        </>
+        <>
+          <h3>Linked In:  </h3>
+          <a href='https://www.linkedin.com/in/brady-s-baker/'>brady-s-baker</a>
+        </>
+        <>
+          <h3>Github: </h3>
+          <a href='https://github.com/BradySBaker'>BradySBaker</a>
+        </>
+      </div>
+      <button id={styles['resume-button']}>Resume</button>
     </div>
   );
 };
