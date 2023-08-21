@@ -14,7 +14,7 @@ const AboutContact = () => {
           <h2>Get to know me</h2>
           <p>
             I am a passionate problem-solver who enjoys all aspects of programming
-            - from backend functionality and front-end development to databases and
+            from backend functionality and front-end development to databases and
             coding challenges. Overcoming technical roadblocks is my forte, and
             I thrive in the ever-changing software engineering environment. I am
             incredibly excited about starting my career in a software job, and I am
@@ -37,18 +37,21 @@ const AboutContact = () => {
       <h1 className='page-header' style={{ marginTop: '7vw' }}>Contact</h1>
       <div className='underline' />
       <div id={styles['contact-container']}>
-        <>
-        <h3>Email Me At: </h3>
+        <div>
+        <img src='./images/icons/email.png' />
+        <h3>Email Me: </h3>
           <a href='mailto: bradybaker.dev@gmail.com'>bradybaker.dev@gmail.com</a>
-        </>
-        <>
+        </div>
+        <div>
+          <img src='./images/icons/linkedin.png'/>
           <h3>Linked In:  </h3>
           <a href='https://www.linkedin.com/in/brady-s-baker/'>brady-s-baker</a>
-        </>
-        <>
+        </div>
+        <div>
+          <img src='./images/icons/github.png'/>
           <h3>Github: </h3>
           <a href='https://github.com/BradySBaker'>BradySBaker</a>
-        </>
+        </div>
       </div>
       <button id={styles['resume-button']}>Resume</button>
     </div>
