@@ -58,7 +58,7 @@
   transition: background-color .5s ease;
 }
 
-#contact-container button:hover {
+#resume-button {
   background-color: #0073cf;
 }
 
