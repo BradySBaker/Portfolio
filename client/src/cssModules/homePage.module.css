@@ -38,7 +38,7 @@
   opacity: .7;
 }
 
-@media (max-width: 500px) { /* Mobile view */
+@media screen and (min-height: calc(100vw / .7)) { /* Mobile view */
   #mainContainer {
     flex-direction: column;
     padding-top: 20%;
