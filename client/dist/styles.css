@@ -13,6 +13,21 @@ body {
   top: 0;
   left: 0;
   background: linear-gradient(to bottom, #001C30, black 15%);
-  height: 5000px;
   width: 100%;
+}
+
+.underline {
+  position: absolute;
+  width: 8%;
+  height: .5vw;
+  background-color: #0073cf;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  border-radius: 10px;
+}
+
+.page-header {
+  font-size: 4vw;
+  font-weight: bolder;
+  text-align: center;
 }
