@@ -48,12 +48,51 @@
   font-weight: 300;
 }
 
+#phone-animator {
+  left: 20%;
+  width: 28vw;
+}
+
+#laptop-animator {
+  left: 20%;
+  width: 68vw;
+}
+
+#phoneImg {
+  position: absolute;
+  transform: translate(-106.6%, 2.7%);
+  animation: fadeIn .5s;
+  width: 28.2vw;
+}
+
+#laptopImg {
+  position: absolute;
+  transform: translate(-154.1%, 35%);
+  width: 33vw;
+  animation: fadeIn .5s;
+  border-radius: .3vw;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
 @media (max-width: 500px) { /* Mobile view */
   .top-buttons {
     font-size: 3vw;
   }
-}
-
-#scrollAnimator {
-  left: 20%;
+  #phone-animator, #phoneImg {
+    width: 55vw;
+  }
+  #laptop-animator {
+    width: 120vw;
+    transform: translateX(-10vw);
+  }
+  #laptopImg {
+    width: 58.2vw;
+    transform: translate(-51.1%, -174%);
+    border-radius: 1vw;
+  }
 }

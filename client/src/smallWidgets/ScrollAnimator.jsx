@@ -1,13 +1,23 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from '../cssModules/smallWidgetsStyles.module.css';
 
-const ScrollAnimator = ({ src, positionMap, width }) => {
+const laptopPositionMap = { 780: 1, 685: 3, 575: 5, 485: 7, 380: 9, 280: 11 };
+const phonePositionMap = { 780: 1, 685: 4, 575: 6, 485: 8, 380: 10, 280: 13 };
+
+const ScrollAnimator = ({ src, gif, phone }) => {
+  const [gifImage, setGifImage] = useState(null);
+
   let frameNum = 0;
   let currentSmoothFrameCall = 0;
   let lastTimestamp;
   const img = useRef();
-
   const smoothFrames = (newFrame, callNum) => {
+    const end = phone ? 13 : 11;
+    if (frameNum === end && !gifImage) {
+      setGifImage(<img src={gif} id={phone ? styles.phoneImg : styles.laptopImg }/>);
+    } else {
+      setGifImage(null);
+    }
     if (callNum !== currentSmoothFrameCall) {
       return;
     }
@@ -31,6 +41,7 @@ const ScrollAnimator = ({ src, positionMap, width }) => {
     const handleScroll = () => {
       const position = img.current.getBoundingClientRect().top;
       let newFrame;
+      const positionMap = phone ? phonePositionMap : laptopPositionMap;
       for (const num in positionMap) {
         if (position <= num) {
           newFrame = positionMap[num];
@@ -51,14 +62,14 @@ const ScrollAnimator = ({ src, positionMap, width }) => {
   }, []);
 
   return (
-    <div>
+    <div style={{ overflow: 'hidden', maxWidth: '100vw' }}>
       <img
-        id={styles.scrollAnimator}
+        id={phone ? styles['phone-animator'] : styles['laptop-animator']}
         src={'./images/' + src + '/' + frameNum + '.png'}
         ref={img}
-        style={{ width }}
         alt="Missing Src"
       />
+      {gifImage}
     </div>
   );
 };

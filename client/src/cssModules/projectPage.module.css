@@ -3,13 +3,13 @@
 }
 
 #widget h1 {
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: bolder;
   text-align: center;
 }
 
 #widget h3 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 100;
   font-style: italic;
   text-align: center;
@@ -19,10 +19,133 @@
 
 #underline {
   position: absolute;
-  width: 5%;
-  height: 1vw;
+  width: 3%;
+  height: .5vw;
   background-color: #0073cf;
   left: 50%;
   transform: translate(-50%, -20%);
   border-radius: 10px;
+}
+
+#laptop {
+  transform: translateX(-8vw);
+}
+
+#phone {
+  width: fit-content;
+  transform: translateX(10vw);
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+}
+
+#widget h2 {
+  position: relative;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 2.5vw;
+  border: 4px solid #0073cf;
+  background-color: #0072cf27;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 5px;
+  user-select: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#widget h2:hover {
+  background-color: #0073cf;
+}
+
+#widget p {
+  max-width: 50vw;
+  font-size: 2vw;
+  font-weight: 300;
+  color: rgb(192, 192, 192);
+}
+
+#phone-description {
+  margin-top: 10vw;
+  transform: translateX(-10vw);
+}
+
+#laptop-description {
+  transform: translate(-17vw, -1vw);
+}
+
+#widget h4 {
+  font-weight: 500;
+  font-size: 1.8vw;
+  opacity: .9;
+}
+
+.contributions {
+  background-color: #0072cf8c;
+  font-size: .7vw;
+  padding: .7vw;
+  white-space: nowrap;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+  border-radius: 20px;
+}
+
+#contribution-list {
+  display: flex;
+  max-width: 50vw;
+  min-width: 40vw;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 500px) { /* Mobile view */
+  .project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #phone, #laptop {
+    transform: translateX(0);
+  }
+  #phone-description {
+    transform: translate(0, -20vw);
+    margin: 0;
+  }
+  #laptop-description {
+    transform: translate(0, -12vw);
+  }
+  #widget p {
+    font-size: 4vw;
+    max-width: 90vw;
+    transform: translateX(5vw);
+  }
+  #widget h2 {
+    font-size: 6vw;
+  }
+  #contribution-list {
+    max-width: 100vw;
+    justify-content: center;
+  }
+  .contributions {
+    font-size: 2.3vw;
+    margin-right: 5vw;
+  }
+  #widget h4 {
+    font-size: 4vw;
+  }
+  #widget h1 {
+    font-size: 8vw;
+  }
+  #underline {
+    width: 10%;
+    height: 2vw;
+    background-color: #0073cf;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  #widget h3 {
+    font-size: 4vw;
+  }
 }
