@@ -17,8 +17,6 @@ const Project = ({ title, desc, gif, contributions, type, link, title2, link2, t
       <div id={styles[type + '-description']}>
         <h2 href={link} onClick={() => linkClick(link)}>{title}</h2>
         <p>{desc}</p>
-        {title2 ? <h2 style={{ fontSize: '2vw' }} onClick={() => linkClick(link2)}>{title2}</h2> : null}
-        {title3 ? <h2 style={{ fontSize: '2vw' }} onClick={() => linkClick(link3)}>{title3}</h2> : null}
         <h4>My Contributions</h4>
         <div id={styles['contribution-list']}>
           {contributions.map((curContr) => {
@@ -32,6 +30,8 @@ const Project = ({ title, desc, gif, contributions, type, link, title2, link2, t
             );
           })}
         </div>
+        {title2 ? <h3 onClick={() => linkClick(link2)}>{title2}</h3> : null}
+        {title3 ? <h3 onClick={() => linkClick(link3)}>{title3}</h3> : null}
       </div>
   </div>
   );
