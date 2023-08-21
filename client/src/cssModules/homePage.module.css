@@ -62,7 +62,7 @@
 #arrow {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 80%);
-  width: 150px;
+  transform: translate(-50%, 6vw);
+  width: 8vw;
   opacity: .3;
 }

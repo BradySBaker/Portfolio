@@ -5,10 +5,10 @@ import ScrollAnimator from './ScrollAnimator.jsx';
 import styles from '../cssModules/projectPage.module.css';
 
 const linkClick = (link) => {
-  window.location = link;
+  window.open(link, '_blank');
 };
 
-const Project = ({ title, desc, gif, contributions, type, link, title2, link2 }) => {
+const Project = ({ title, desc, gif, contributions, type, link, title2, link2, title3, link3 }) => {
   return (
     <div className={styles.project}>
       <div id={styles[type]}>
@@ -18,6 +18,7 @@ const Project = ({ title, desc, gif, contributions, type, link, title2, link2 })
         <h2 href={link} onClick={() => linkClick(link)}>{title}</h2>
         <p>{desc}</p>
         {title2 ? <h2 style={{ fontSize: '2vw' }} onClick={() => linkClick(link2)}>{title2}</h2> : null}
+        {title3 ? <h2 style={{ fontSize: '2vw' }} onClick={() => linkClick(link3)}>{title3}</h2> : null}
         <h4>My Contributions</h4>
         <div id={styles['contribution-list']}>
           {contributions.map((curContr) => {

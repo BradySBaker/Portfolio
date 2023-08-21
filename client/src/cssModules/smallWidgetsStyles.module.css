@@ -60,9 +60,9 @@
 
 #phoneImg {
   position: absolute;
-  transform: translate(-107%, 3%);
+  transform: translate(-106.6%, 2.7%);
   animation: fadeIn .5s;
-  width: 28vw;
+  width: 28.2vw;
 }
 
 #laptopImg {
