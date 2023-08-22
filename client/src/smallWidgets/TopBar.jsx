@@ -7,7 +7,11 @@ const buttons = { Home: '', Projects: '', About: '', Contact: '' };
 const scrollPositions = {};
 const sectionPositions = { Home: 0 };
 
-const scrollElement = document.documentElement || document.body;
+const scrollTo = (name) => {
+  console.log(name);
+  console.log(sectionPositions[name])
+  window.scrollTo({ top: sectionPositions[name], behavior: 'smooth' });
+};
 
 const TopBar = () => {
   const targetElementRef = useRef(null);
@@ -17,7 +21,7 @@ const TopBar = () => {
   useEffect(() => {
     const elements = [];
     for (const name in buttons) {
-      elements.push(<div className={styles['top-buttons']} id={name} key={name}>{name}</div>);
+      elements.push(<div className={styles['top-buttons']} id={name} key={name} onClick={() => scrollTo(name)}>{name}</div>);
     };
     setButtonElements(elements);
   }, []);
