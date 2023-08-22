@@ -38,7 +38,7 @@ const TopBar = () => {
       setBarPosition(scrollPositions.Home);
     };
     const handleScroll = () => {
-      const scrollPosition = scrollElement.scrollTop;
+      const scrollPosition = window.scrollY;
       let min;
       let minKey;
       for (const key in sectionPositions) {
@@ -82,7 +82,7 @@ const TopBar = () => {
         {buttonElements}
       </div>
       <svg id={styles['scroll-bar']}>
-          <rect x={barPosition + 'px'} width={'10%'} height='4%' fill='#0073cf' rx="4px" ry="4px"/>
+          <rect x={barPosition + 'px'} width='10%' height='5%' fill='#0073cf' rx="4px" ry="4px"/>
       </svg>
   </div>
   );
