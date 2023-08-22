@@ -13,7 +13,7 @@ const ledCanvasDesc = 'LED Canvas is an interactive pixel art device controlled 
 const ProjectPage = () => {
   return (
     <div id={styles.widget}>
-      <h1 className='page-header'>Projects</h1>
+      <h1 className='page-header' id='projects'>Projects</h1>
       <div className='underline'/>
       <h5>Below are some of my finished projects</h5>
       <Project title={'ToyShare'} link={'https://github.com/Team-4-BOC/ToyShare'} desc={toyShareDesc} gif={'./images/projects/toyshare.gif'} contributions={toyShareContributions} type={'phone'}/>
