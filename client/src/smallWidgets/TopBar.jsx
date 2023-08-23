@@ -7,6 +7,8 @@ const buttons = [ 'Home', 'Projects', 'About', 'Contact'];
 const scrollPositions = {};
 const sectionPositions = { Home: 0 };
 
+let prevScrollPos = 0;
+
 const scrollTo = (name) => {
   window.scrollTo({ top: sectionPositions[name], behavior: 'smooth' });
 };
@@ -31,7 +33,6 @@ const TopBar = () => {
     for (let i = 0; i < elements.length; i++) {
       scrollPositions[elements[i].id] = elements[i].getBoundingClientRect().left;
     }
-    console.log(scrollPositions);
     setBarPosition(scrollPositions.Home);
   };
 
@@ -45,11 +46,14 @@ const TopBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      console.log(scrollPosition);
+      if (Math.abs(scrollPosition - prevScrollPos) < 50) { //For performance
+        return;
+      }
+      prevScrollPos = scrollPosition;
       let min;
       let minKey;
       for (const key in sectionPositions) {
-        const distance = Math.abs(sectionPositions[key] - scrollPosition);
+        let distance = Math.abs(sectionPositions[key] - scrollPosition);
         if (distance < min || min === undefined) {
           min = distance;
           minKey = key;
