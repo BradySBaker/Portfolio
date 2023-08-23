@@ -7,7 +7,7 @@ const skills = ['JavaScript', 'HTML', 'CSS', 'React.js', 'Git', 'Node.js', 'Dock
 const AboutContact = () => {
   return (
     <div id={styles.widget}>
-      <h1 className='page-header'>About Me</h1>
+      <h1 className='page-header' id='about'>About Me</h1>
       <div className='underline' />
       <div id={styles['about-me-container']}>
         <div>
@@ -34,7 +34,7 @@ const AboutContact = () => {
             </div>
         </div>
       </div>
-      <h1 className='page-header' style={{ marginTop: '7vw' }}>Contact</h1>
+      <h1 className='page-header' style={{ marginTop: '20%' }} id='contact'>Contact</h1>
       <div className='underline' />
       <div id={styles['contact-container']}>
         <div>

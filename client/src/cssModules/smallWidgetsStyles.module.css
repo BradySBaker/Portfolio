@@ -21,16 +21,24 @@
 }
 
 #top-bar {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100vw;
-  z-index: 10;
   cursor: pointer;
   background-color: rgba(5, 5, 5, 0.356);
   padding: 10px 0 10px 0;
   border-radius: 10px;
+}
+
+#top-element {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+#bar {
+  height: .8vw;
 }
 
 .top-buttons {
@@ -71,6 +79,10 @@
   border-radius: .3vw;
 }
 
+#scroll-bar {
+  width: 100vw;
+}
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -92,5 +104,9 @@
     width: 58.2vw;
     transform: translate(-51.1%, -174%);
     border-radius: 1vw;
+  }
+  #bar {
+    width: 10vw;
+    height: 1.7vw;
   }
 }

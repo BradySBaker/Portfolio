@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require("path");
 
 module.exports = {
@@ -38,5 +39,10 @@ module.exports = {
       exclude: /\.module\.css$/
     }
     ],
+  },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "/client/dist"),
+    },
   },
 };
