@@ -40,6 +40,7 @@
 #bar {
   width: 5.5vw;
   height: .8vw;
+  transform: translateX(1.6vw);
 }
 
 .top-buttons {
@@ -106,5 +107,9 @@
     width: 58.2vw;
     transform: translate(-51.1%, -174%);
     border-radius: 1vw;
+  }
+  #bar {
+    width: 10vw;
+    height: 1.7vw;
   }
 }
