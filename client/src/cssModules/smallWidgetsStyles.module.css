@@ -38,9 +38,7 @@
 }
 
 #bar {
-  width: 5.5vw;
   height: .8vw;
-  transform: translateX(1.6vw);
 }
 
 .top-buttons {
@@ -83,7 +81,6 @@
 
 #scroll-bar {
   width: 100vw;
-  transform: translateX(-2vw);
 }
 
 @keyframes fadeIn {

@@ -4,8 +4,10 @@ import styles from '../cssModules/smallWidgetsStyles.module.css';
 
 const buttons = [ 'Home', 'Projects', 'About', 'Contact'];
 
-const scrollPositions = {};
+const barPositionsWidth = {Home: {}, Projects: {}, About: {}, Contact: {}};
 const sectionPositions = { Home: 0 };
+
+let webHeight = 0;
 
 let prevScrollPos = 0;
 
@@ -13,13 +15,18 @@ const scrollTo = (name) => {
   window.scrollTo({ top: sectionPositions[name], behavior: 'smooth' });
 };
 
+const reload = () => {
+  location.reload();
+};
+
 const TopBar = () => {
   const targetElementRef = useRef(null);
   const [buttonElements, setButtonElements] = useState([]);
-  const [barPosition, setBarPosition] = useState(0);
-
+  const [barPositionWidth, setBarPosWidth] = useState({pos: 0, width: 50});
   const setPositions = () => {
-    if (buttonElements.length < 1  && !scrollPositions.Home) {
+    webHeight = document.getElementById('app').offsetHeight;
+
+    if (buttonElements.length < 1  &&  !barPositionsWidth.Home.pos) {
       return;
     }
 
@@ -28,15 +35,17 @@ const TopBar = () => {
     sectionPositions.Projects = document.getElementById('projects').getBoundingClientRect().top;
     sectionPositions.About = document.getElementById('about').getBoundingClientRect().top;
     sectionPositions.Contact = document.getElementById('contact').getBoundingClientRect().top;
-
     const elements = targetElementRef.current.children;
     for (let i = 0; i < elements.length; i++) {
-      scrollPositions[elements[i].id] = elements[i].getBoundingClientRect().left;
+    const curName = elements[i].id;
+     barPositionsWidth[curName].pos = elements[i].getBoundingClientRect().left;
+     barPositionsWidth[curName].width = elements[i].offsetWidth;
     }
-    setBarPosition(scrollPositions.Home);
+    setBarPosWidth(barPositionsWidth.Home);
   };
 
   useEffect(() => {
+    webHeight = document.getElementById('app').offsetHeight;
     const elements = [];
     buttons.forEach((name) => {
       elements.push(<div className={styles['top-buttons']} id={name} key={name} onClick={() => scrollTo(name)}>{name}</div>);
@@ -45,7 +54,11 @@ const TopBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
+      const scrollPosition = window.scrollY;      
+      if (scrollPosition + window.innerHeight + 5>= webHeight) {
+        setBarPosWidth(barPositionsWidth.Contact);
+        return;
+      }
       if (Math.abs(scrollPosition - prevScrollPos) < 50) { //For performance
         return;
       }
@@ -60,15 +73,15 @@ const TopBar = () => {
         }
       }
       if (min !== undefined) {
-        setBarPosition(scrollPositions[minKey]);
+        setBarPosWidth(barPositionsWidth[minKey]);
       }
     };
     window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', setPositions);
+    window.addEventListener('resize', reload);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', setPositions);
+      window.removeEventListener('resize', reload);
     };
   }, []);
 
@@ -80,7 +93,7 @@ const TopBar = () => {
         {buttonElements}
       </div>
       <svg id={styles['scroll-bar']}>
-          <rect x={barPosition + 'px'} id={styles.bar} fill='#0073cf' rx="4px" ry="4px"/>
+          <rect x={barPositionWidth.pos + 'px'} id={styles.bar} width={barPositionWidth.width + 'px'} fill='#0073cf' rx=".4rem" ry=".4rem"/>
       </svg>
   </div>
   );

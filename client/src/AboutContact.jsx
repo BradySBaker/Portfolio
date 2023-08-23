@@ -34,7 +34,7 @@ const AboutContact = () => {
             </div>
         </div>
       </div>
-      <h1 className='page-header' style={{ marginTop: '7vw' }} id='contact'>Contact</h1>
+      <h1 className='page-header' style={{ marginTop: '20%' }} id='contact'>Contact</h1>
       <div className='underline' />
       <div id={styles['contact-container']}>
         <div>

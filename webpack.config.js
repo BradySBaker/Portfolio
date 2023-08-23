@@ -44,9 +44,5 @@ module.exports = {
     static: {
       directory: path.join(__dirname, "/client/dist"),
     },
-    hot: true, 
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(), 
-  ],
 };
