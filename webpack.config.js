@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require("path");
 
 module.exports = {
@@ -39,4 +40,13 @@ module.exports = {
     }
     ],
   },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "/client/dist"),
+    },
+    hot: true, 
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(), 
+  ],
 };

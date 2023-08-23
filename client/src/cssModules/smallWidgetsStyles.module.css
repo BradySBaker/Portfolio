@@ -37,6 +37,11 @@
   z-index: 10;
 }
 
+#bar {
+  width: 5.5vw;
+  height: .8vw;
+}
+
 .top-buttons {
   font-weight: 100;
   background-color: transparent;
