@@ -31,11 +31,9 @@ const TopBar = () => {
       return;
     }
 
-    window.scrollTo({ top: 0 });
-
-    sectionPositions.Projects = document.getElementById('projects').getBoundingClientRect().top;
-    sectionPositions.About = document.getElementById('about').getBoundingClientRect().top;
-    sectionPositions.Contact = document.getElementById('contact').getBoundingClientRect().top;
+    sectionPositions.Projects = document.getElementById('projects').getBoundingClientRect().top + window.scrollY;
+    sectionPositions.About = document.getElementById('about').getBoundingClientRect().top + window.scrollY;
+    sectionPositions.Contact = document.getElementById('contact').getBoundingClientRect().top + window.scrollY;
 
     for (const name in buttonRefs.current) {
       const buttonElement = buttonRefs.current[name].current;
@@ -78,7 +76,9 @@ const TopBar = () => {
       const scrollPosition = window.scrollY;
       if (scrollPosition + window.innerHeight + 5 >= webHeight) {
         if (currentSection !== 'Contact') {
-          setUnsetHoverEffect(buttonRefs.current[currentSection].current, false);
+          if (currentSection) {
+            setUnsetHoverEffect(buttonRefs.current[currentSection].current, false);
+          }
           setUnsetHoverEffect(buttonRefs.current.Contact.current, true);
           setBarPosWidth(barPositionsWidth.Contact);
           currentSection = 'Contact';
@@ -126,7 +126,7 @@ const TopBar = () => {
         {buttonElements}
       </div>
       <svg id={styles['scroll-bar']}>
-          <rect x={barPositionWidth.pos} id={styles.bar} width={barPositionWidth.width} fill='#0073cf' />
+          <rect x={barPositionWidth.pos} id={styles.bar} width={barPositionWidth.width} fill='rgb(0, 204, 255,)' />
       </svg>
   </div>
   );
