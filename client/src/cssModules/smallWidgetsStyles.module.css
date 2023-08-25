@@ -38,7 +38,10 @@
 }
 
 #bar {
-  height: .8vw;
+  height: .2vw;
+  rx: .1vw;
+  ry: .1vw;
+  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255))
 }
 
 .top-buttons {
@@ -106,7 +109,6 @@
     border-radius: 1vw;
   }
   #bar {
-    width: 10vw;
-    height: 1.7vw;
+    height: .5vw;
   }
 }
