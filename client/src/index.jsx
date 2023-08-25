@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 
 import HomePage from './HomePage.jsx';
@@ -34,8 +34,7 @@ const App = () => {
     setIsLoading(false);
   };
 
-  preloadImages();
-
+  useEffect(preloadImages, []);
   return (
     <div id="app" className="w-full">
       {isLoading
