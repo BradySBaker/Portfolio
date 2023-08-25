@@ -22,7 +22,7 @@ const ProfileIcon = () => {
     };
   }, []);
   return (
-    <div id={styles['profile-icon']} ref={profileIcon}>
+    <div id={styles['profile-icon']} ref={profileIcon} style={{ backgroundImage: 'url("./images/lake.jpg")' }}>
       <img src="./images/me.png"/>
     </div>
   );
