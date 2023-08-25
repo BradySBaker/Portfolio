@@ -110,4 +110,11 @@
   #bar {
     height: .5vw;
   }
+    /* Firefox-specific rule */
+  @supports (-moz-appearance: none) {
+    #laptopImg {
+      /* Adjust the properties as needed for Firefox */
+      transform: translate(-171%, 35%);
+    }
+  }
 }

@@ -126,7 +126,7 @@ const TopBar = () => {
         {buttonElements}
       </div>
       <svg id={styles['scroll-bar']}>
-          <rect x={barPositionWidth.pos} id={styles.bar} width={barPositionWidth.width} fill='rgb(0, 204, 255,)' />
+          <rect x={barPositionWidth.pos} id={styles.bar} width={barPositionWidth.width} fill='#0073cf' />
       </svg>
   </div>
   );
