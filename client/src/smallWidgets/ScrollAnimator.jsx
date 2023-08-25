@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from '../cssModules/smallWidgetsStyles.module.css';
 
-const laptopPositionMap = { 850: 1, 760: 3, 675: 5, 585: 7, 480: 9, 380: 11 };
-const phonePositionMap = { 850: 1, 760: 4, 675: 6, 585: 8, 480: 10, 380: 13 };
+const laptopPositionMap = { 800: 1, 730: 3, 625: 5, 515: 7, 410: 9, 350: 11 };
+const phonePositionMap = { 800: 1, 730: 4, 625: 6, 515: 8, 410: 10, 350: 13 };
 
 const ScrollAnimator = ({ src, gif, phone }) => {
   const [gifImage, setGifImage] = useState(null);

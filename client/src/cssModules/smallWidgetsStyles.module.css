@@ -41,7 +41,7 @@
   height: .2vw;
   rx: .1vw;
   ry: .1vw;
-  filter: drop-shadow(0px 5px 15px rgb(255, 255, 255))
+  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255))
 }
 
 .top-buttons {
