@@ -15,6 +15,8 @@ const scrollTo = (name) => {
   window.scrollTo({ top: sectionPositions[name], behavior: 'smooth' });
 };
 
+let currentSection;
+
 const TopBar = () => {
   const buttonRefs = useRef({});
   const [buttonElements, setButtonElements] = useState([]);
@@ -62,10 +64,25 @@ const TopBar = () => {
   }, []);
 
   useEffect(() => {
+    const setUnsetHoverEffect = (element, hover) => {
+      if (hover) {
+        element.style.fontWeight = 300;
+        element.style.opacity = 1;
+      } else {
+        element.style.fontWeight = 100;
+        element.style.opacity = 0.7;
+      }
+    };
+
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       if (scrollPosition + window.innerHeight + 5 >= webHeight) {
-        setBarPosWidth(barPositionsWidth.Contact);
+        if (currentSection !== 'Contact') {
+          setUnsetHoverEffect(buttonRefs.current[currentSection].current, false);
+          setUnsetHoverEffect(buttonRefs.current.Contact.current, true);
+          setBarPosWidth(barPositionsWidth.Contact);
+          currentSection = 'Contact';
+        }
         return;
       }
       if (Math.abs(scrollPosition - prevScrollPos) < 50) { // For performance
@@ -82,8 +99,14 @@ const TopBar = () => {
         }
       }
       if (min !== undefined) {
-        console.log(buttonRefs.current);
-        setBarPosWidth(barPositionsWidth[minKey]);
+        if (minKey !== currentSection) {
+          if (currentSection) {
+            setUnsetHoverEffect(buttonRefs.current[currentSection].current, false);
+          }
+          setUnsetHoverEffect(buttonRefs.current[minKey].current, true);
+          setBarPosWidth(barPositionsWidth[minKey]);
+          currentSection = minKey;
+        }
       }
     };
     window.addEventListener('scroll', handleScroll);
