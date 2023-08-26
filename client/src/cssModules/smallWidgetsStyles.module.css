@@ -82,7 +82,10 @@
 }
 
 #scroll-bar {
+  position: absolute;
   width: 100vw;
+  z-index: -1;
+  pointer-events: none;
 }
 
 @keyframes fadeIn {
