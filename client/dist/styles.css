@@ -54,11 +54,21 @@ body {
   transform: translateY(1.6vw);
 }
 
+#ps {
+  font-size: .8vw;
+  color: rgb(128, 92, 46);
+  margin-top: 1vw;
+}
+
 @media screen and (min-height: calc(100vw / .7)) { /* Mobile view*/
   .page-header {
     font-size: 6vw;
   }
   .credit {
     font-size: 2vw;
+  }
+  #ps {
+    font-size: 1.8vw;
+    margin-top: 5vw;
   }
 }
