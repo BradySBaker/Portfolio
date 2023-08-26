@@ -34,6 +34,7 @@ const About = () => {
               solutions that make a positive impact. Let the adventures begin!
             </p>
           </div>
+          <a href='https://docs.google.com/document/d/1kKDpxAj89pdvM7fuX_NwD4Fm-WGjZPboeBkdYqjZgfg/edit?usp=sharing' rel="noreferrer" target="_blank" id={styles['resume-button']}>Resume</a>
         </div>
         <div>
           <h2>My Skills</h2>
