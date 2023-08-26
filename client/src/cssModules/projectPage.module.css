@@ -1,5 +1,5 @@
 #widget {
-  margin-top: 25vw;
+  margin-top: 10vw;
 }
 
 #widget h5 {
@@ -139,7 +139,7 @@
     transform: translate(-50%, -100%);
   }
   #widget h5 {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   #widget h3 {
     font-size: 3.5vw;

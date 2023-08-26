@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 
 import styles from '../cssModules/smallWidgetsStyles.module.css';
 
-const buttons = ['Home', 'Projects', 'About', 'Contact'];
+const buttons = ['Home', 'About', 'Projects', 'Contact'];
 
 const barPositionsWidth = { Home: {}, Projects: {}, About: {}, Contact: {} };
 const sectionPositions = { Home: 0 };
