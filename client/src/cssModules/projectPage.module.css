@@ -91,7 +91,7 @@
   background-color: #2c2c2c;
   padding: .6vw;
   border-radius: .5vw;
-  font-size: .7vw;
+  font-size: 1vw;
   white-space: nowrap;
   margin-bottom: .6vw;
 }
@@ -153,7 +153,7 @@
   }
 
   .contributions {
-      font-size: 2.3vw;
+      font-size: 3vw;
   }
 
   #widget h4 {
