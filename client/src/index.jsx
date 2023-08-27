@@ -12,16 +12,16 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   const preloadImages = async () => {
-    const namesAndAmount = [{ phone: 13 }, { laptop: 11 }];
+    const namesAndAmount = { phone: 13, laptop: 11 };
     const etcImages = ['lake.jpg', 'me.png', '/projects/fec.gif', '/projects/ledcanvas.gif', '/projects/toyshare.gif'];
     const imagePromises = [];
-    namesAndAmount.forEach((imgInfo) => {
-      for (let frameNumber = 1; frameNumber <= imgInfo.amount; frameNumber++) {
+    for (const name in namesAndAmount) {
+      for (let frameNumber = 1; frameNumber <= namesAndAmount[name]; frameNumber++) {
         const image = new window.Image();
-        image.src = `./images/${imgInfo.name}/${frameNumber}.png`;
+        image.src = `./images/${name}/${frameNumber}.png`;
         imagePromises.push(new Promise((resolve) => (image.onload = resolve)));
       }
-    });
+    };
 
     etcImages.forEach((imgName) => {
       console.log(imgName);
