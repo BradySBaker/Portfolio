@@ -98,7 +98,7 @@
 
 #contribution-list {
   display: flex;
-  max-width: 50vw;
+  max-width: 40vw;
   min-width: 40vw;
   flex-wrap: wrap;
 }
@@ -144,7 +144,7 @@
   }
 
   #widget h2 {
-      font-size: 4vw;
+      font-size: 5vw;
   }
 
   #contribution-list {
@@ -153,7 +153,9 @@
   }
 
   .contributions {
-      font-size: 3vw;
+      font-size: 3.4vw;
+      border-radius: 1.5vw;
+      padding: 1vw;
   }
 
   #widget h4 {
@@ -177,6 +179,6 @@
   }
 
   #widget h3 {
-      font-size: 3.5vw;
+      font-size: 5vw;
   }
 }
