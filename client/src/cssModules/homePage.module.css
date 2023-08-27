@@ -38,6 +38,7 @@
   opacity: .7;
 }
 
+
 @media screen and (min-height: calc(100vw / .7)) { /* Mobile view */
   #mainContainer {
     flex-direction: column;

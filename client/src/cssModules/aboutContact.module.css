@@ -48,6 +48,18 @@
   white-space: nowrap;
   margin-bottom: .6vw;
   color: rgb(206, 206, 206);
+  user-select: none;
+  transition: border .2s ease-in;
+}
+.skill:hover {
+  border: 1px solid #002fff;
+}
+
+#infoDisplay {
+  position: absolute;
+  color: rgba(255, 217, 0, 0.548);
+  font-size: 1vw;
+  text-decoration: underline;
 }
 
 #contact-container {
@@ -166,6 +178,11 @@
   width: 5vw;
 }
 
+#click-icon {
+  transform: translate(-100%, 40%);
+  opacity: .7;
+}
+
 @media screen and (min-height: calc(100vw / .7)) { /* Mobile view*/
   #About {
     margin-top: 40vw;
@@ -221,5 +238,9 @@
   }
   .widgets img {
     width: 5vw;
+  }
+  #infoDisplay {
+    font-size: 3vw;
+    text-align: center;
   }
 }

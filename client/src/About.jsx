@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import styles from './cssModules/aboutContact.module.css';
+
+import skillInfo from './skillInfo';
 
 const skills = ['JavaScript', 'HTML', 'CSS', 'React.js', 'Git', 'Node.js', 'Docker', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redux', 'EC2/S3', 'Babel.js', 'Jest', 'NginX', 'Collaboration', 'Many More'];
 
 const About = () => {
+  const [infoDisplay, setInfoDisplay] = useState(false);
+
   return (
     <div id={styles.About} className={styles.widgets}>
       <h1 className='page-header' id='about'>About Me</h1>
@@ -35,16 +39,18 @@ const About = () => {
             </p>
           </div>
           <a href='https://docs.google.com/document/d/1kKDpxAj89pdvM7fuX_NwD4Fm-WGjZPboeBkdYqjZgfg/edit?usp=sharing' rel="noreferrer" target="_blank" id={styles['resume-button']}>Resume</a>
+          <img id={styles['click-icon']} src='./images/icons/click-icon.png'></img>
         </div>
         <div>
           <h2>My Skills</h2>
-            <div id={styles.skills}>
+            <div id={styles.skills} onMouseLeave={() => setInfoDisplay(false)}>
               {skills.map((skill) => {
                 return (
-                  <div key={skill} className={styles.skill}>{skill}</div>
+                  <div key={skill} className={styles.skill} onClick={() => setInfoDisplay(skillInfo[skill])} onMouseEnter={() => setInfoDisplay(skillInfo[skill])} onMouseLeave={() => setInfoDisplay(skillInfo[skill])}>{skill}</div>
                 );
               })}
             </div>
+            {infoDisplay ? <div id={styles.infoDisplay}>{infoDisplay}</div> : null}
         </div>
       </div>
     </div>
