@@ -2,7 +2,7 @@ export default {
 
   toyshare: {
     contributions: ['Map Feature', 'Individual Toy Page', 'Toy Distance', 'Toy Locations', 'All Toy Backend Routes'],
-    desc: 'ToyShare is a comprehensive application developed by a collaborative team, enabling users to effortlessly lend their toys to others or borro from fellow users.',
+    desc: 'ToyShare is a comprehensive application developed by a collaborative team, enabling users to effortlessly lend their toys to others or borrow from fellow users.',
     libraries: ['Tailwind', 'React', 'PostgreSQL', 'Jest', 'Express', 'Axios, Mapbox-gl']
   },
   fec: {

@@ -42,6 +42,7 @@ const ScrollAnimator = ({ src, gif, phone }) => {
       const position = img.current.getBoundingClientRect().top;
       let newFrame;
       const positionMap = phone ? phonePositionMap : laptopPositionMap;
+      console.log(positionMap);
       for (const num in positionMap) {
         if (position <= num) {
           newFrame = positionMap[num];
