@@ -2,12 +2,12 @@ export default {
 
   toyshare: {
     contributions: ['Map Feature', 'Individual Toy Page', 'Toy Distance', 'Toy Locations', 'All Toy Backend Routes'],
-    desc: 'ToyShare is a comprehensive application developed by a collaborative team, enabling users to effortlessly lend their toys to others or borrow playthings from fellow users.',
+    desc: 'ToyShare is a comprehensive application developed by a collaborative team, enabling users to effortlessly lend their toys to others or borro from fellow users.',
     libraries: ['Tailwind', 'React', 'PostgreSQL', 'Jest', 'Express', 'Axios, Mapbox-gl']
   },
   fec: {
     contributions: ['Review List', 'Lazy Loading', 'Sort Reviews', 'Filter Reviews', 'Post Image Review', 'Review API fetch', { text: 'Product MicroService', style: { backgroundColor: 'rgba(255, 0, 0, 0.466)' } }],
-    desc: 'Grace Outfitters is a web app displaying relevant information for a single product in the catalog of an online retailer. It is composed of of Product Overview, Ratings & Reviews, Questions & Answers, and Related Items. The API is also composed of the main 3 microservices',
+    desc: 'Grace Outfitters is a web app displaying relevant information for a single product in the catalog of an online retailer. It is composed of Product Overview, Ratings & Reviews, Questions & Answers, and Related Items. The API is also composed of the main 3 microservices',
     libraries: ['Node.js', 'Express', 'PostgreSQL', 'Redis', 'NGINX', 'Jest', 'K6', 'Docker', 'EC2', 'React-Redux', 'Jest', 'EC2/S3', 'Axios', 'Babel', 'Webpack', 'css-loader/style-loader']
   },
   ledCanvas: {
