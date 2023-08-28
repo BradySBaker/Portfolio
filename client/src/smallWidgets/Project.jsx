@@ -18,7 +18,7 @@ const Project = ({ title, desc, gif, contributions, type, link, title2, link2, t
       <div id={styles[type + '-description']}>
         <h2 href={link} onClick={() => linkClick(link)}>{title}</h2>
         <p>{desc}</p>
-        <h4>My Contributions</h4>
+        <h4>{!displayLibraries ? 'My Contributions' : 'Libraries Used'}</h4>
         {!displayLibraries
           ? <div id={styles['contribution-list']}>
           {contributions.map((curContr) => {
