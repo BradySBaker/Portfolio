@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./client/src/AboutContact.jsx":
-/*!*************************************!*\
-  !*** ./client/src/AboutContact.jsx ***!
-  \*************************************/
+/***/ "./client/src/About.jsx":
+/*!******************************!*\
+  !*** ./client/src/About.jsx ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -15,88 +15,279 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cssModules/aboutContact.module.css */ "./client/src/cssModules/aboutContact.module.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _skillInfo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./skillInfo */ "./client/src/skillInfo.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
 
-var skills = ['JavaScript', 'HTML', 'CSS', 'React.js', 'Git', 'Node.js', 'Docker', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redux', 'EC2/S3', 'Babel.js', 'Jest', 'NginX', 'Many More'];
-var AboutContact = function AboutContact() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    id: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].widget,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
+
+var skills = ['JavaScript', 'HTML', 'CSS', 'TypeScript', 'React.js', 'Git', 'Node.js', 'Docker', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redux', 'EC2/S3', 'Babel.js', 'Jest', 'NginX', 'Python', 'Socket.IO', 'Collaboration', 'Many More'];
+var About = function About() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    infoDisplay = _useState2[0],
+    setInfoDisplay = _useState2[1];
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    id: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].About,
+    className: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].widgets,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
       className: "page-header",
       id: "about",
       children: "About Me"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "underline"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
       id: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"]['about-me-container'],
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
           children: "Get to know me"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-          children: "I am a passionate problem-solver who enjoys all aspects of programming from backend functionality and front-end development to databases and coding challenges. Overcoming technical roadblocks is my forte, and I thrive in the ever-changing software engineering environment. I am incredibly excited about starting my career in a software job, and I am actively looking for opportunities where I can contribute my skills, embrace new challenges, and collaborate with like-minded professionals to create meaningful solutions that make a positive impact. Let the adventures begin!"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {
+            children: ["I'm a ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("strong", {
+              children: "fullstack web developer"
+            }), " and passionate problem-solver. I enjoy all aspects of programming from ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("strong", {
+              children: "backend"
+            }), " functionality and ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("strong", {
+              children: "front-end"
+            }), " development to ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("strong", {
+              children: "databases"
+            }), " and coding challenges. Overcoming technical roadblocks is my forte, and I thrive in the ever-changing software engineering environment."]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+            children: "Beginning at age three, I have been using computers to pursue many creative endeavors. Initially drawn to game development and video editing, my interest grew further during my year of learning Java in college. Leaping forward, I joined the Hack Reactor 9-month program, where I quickly progressed into creating responsive, fast, and user-friendly websites."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+            children: "I am incredibly excited about starting my career in a software job, and I am actively looking for opportunities where I can contribute my skills, embrace new challenges, and collaborate with like-minded professionals to create meaningful solutions that make a positive impact. Let the adventures begin!"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+          href: "https://docs.google.com/document/d/1kKDpxAj89pdvM7fuX_NwD4Fm-WGjZPboeBkdYqjZgfg/edit?usp=sharing",
+          rel: "noreferrer",
+          target: "_blank",
+          id: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"]['resume-button'],
+          children: "Resume"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+          id: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"]['click-icon'],
+          src: "./images/icons/click-icon.png"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
           children: "My Skills"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           id: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].skills,
+          onMouseLeave: function onMouseLeave() {
+            return setInfoDisplay(false);
+          },
           children: skills.map(function (skill) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
               className: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].skill,
+              onClick: function onClick() {
+                return setInfoDisplay(_skillInfo__WEBPACK_IMPORTED_MODULE_2__["default"][skill]);
+              },
+              onMouseEnter: function onMouseEnter() {
+                return setInfoDisplay(_skillInfo__WEBPACK_IMPORTED_MODULE_2__["default"][skill]);
+              },
+              onMouseLeave: function onMouseLeave() {
+                return setInfoDisplay(_skillInfo__WEBPACK_IMPORTED_MODULE_2__["default"][skill]);
+              },
               children: skill
             }, skill);
           })
-        })]
+        }), infoDisplay ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          id: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].infoDisplay,
+          children: infoDisplay
+        }) : null]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
-      className: "page-header",
-      style: {
-        marginTop: '20%'
-      },
-      id: "contact",
-      children: "Contact"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      className: "underline"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      id: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"]['contact-container'],
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-          src: "./images/icons/email.png"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-          children: "Email Me: "
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-          href: "mailto: bradybaker.dev@gmail.com",
-          children: "bradybaker.dev@gmail.com"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-          src: "./images/icons/linkedin.png"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-          children: "Linked In:  "
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-          href: "https://www.linkedin.com/in/brady-s-baker/",
-          children: "brady-s-baker"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-          src: "./images/icons/github.png"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-          children: "Github: "
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-          href: "https://github.com/BradySBaker",
-          children: "BradySBaker"
-        })]
-      })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-      id: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"]['resume-button'],
-      children: "Resume"
     })]
   });
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AboutContact);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);
+
+/***/ }),
+
+/***/ "./client/src/Contact.jsx":
+/*!********************************!*\
+  !*** ./client/src/Contact.jsx ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cssModules/aboutContact.module.css */ "./client/src/cssModules/aboutContact.module.css");
+/* harmony import */ var _smallWidgets_ThankyouError_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./smallWidgets/ThankyouError.jsx */ "./client/src/smallWidgets/ThankyouError.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return { value: void 0, done: !0 }; } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable || "" === iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } throw new TypeError(_typeof(iterable) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+var Contact = function Contact() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    sending = _useState2[0],
+    setSending = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+    _useState4 = _slicedToArray(_useState3, 2),
+    apiValue = _useState4[0],
+    setApiValue = _useState4[1];
+  var handleSubmit = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(e) {
+      var form, formData, response;
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            setSending(true);
+            e.preventDefault();
+            form = e.target;
+            formData = new FormData(form);
+            _context.prev = 4;
+            _context.next = 7;
+            return fetch(form.action, {
+              method: 'POST',
+              body: formData,
+              headers: {
+                Accept: 'application/json'
+              }
+            });
+          case 7:
+            response = _context.sent;
+            if (response.ok) {
+              console.log('ok');
+              setApiValue(true);
+            } else {
+              setApiValue(false);
+            }
+            setSending(false);
+            _context.next = 17;
+            break;
+          case 12:
+            _context.prev = 12;
+            _context.t0 = _context["catch"](4);
+            console.error('Error submitting form:', _context.t0);
+            setApiValue(false);
+            setSending(false);
+          case 17:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee, null, [[4, 12]]);
+    }));
+    return function handleSubmit(_x2) {
+      return _ref.apply(this, arguments);
+    };
+  }();
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    id: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].Contact,
+    className: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].widgets,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
+      className: "page-header",
+      id: "contact",
+      children: "Contact"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "underline"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+      id: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"]['contact-me'],
+      children: "Feel free to contact me. I may be available for freelance work. I am also currently seeking full-time or part-time employment."
+    }), !sending && apiValue === undefined ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("form", {
+      id: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"]['message-form'],
+      onSubmit: handleSubmit,
+      action: "https://formspree.io/f/mbjvoqal",
+      method: "POST",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+        htmlFor: "name",
+        children: "Name"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+        type: "text",
+        name: "name",
+        id: "name",
+        placeholder: "Enter Your Name",
+        required: true
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+        htmlFor: "email",
+        children: "Email"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+        type: "text",
+        name: "email",
+        id: "email",
+        placeholder: "Enter Your Email",
+        required: true
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+        htmlFor: "message",
+        children: "Message"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("textarea", {
+        type: "text",
+        name: "message",
+        id: "Message",
+        placeholder: "Enter a Message",
+        required: true
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+        type: "submit",
+        children: "SUBMIT"
+      })]
+    }) : sending ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+      src: "./images/icons/loading.gif",
+      id: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].loading
+    }) : null, apiValue !== undefined ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_smallWidgets_ThankyouError_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      ok: apiValue,
+      setApiValue: setApiValue
+    }) : null, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      id: _cssModules_aboutContact_module_css__WEBPACK_IMPORTED_MODULE_1__["default"]['contact-container'],
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+          src: "./images/icons/email.png"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h3", {
+          children: "Email Me: "
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+          href: "mailto: bradybaker.dev@gmail.com",
+          rel: "noreferrer",
+          target: "_blank",
+          children: "bradybaker.dev@gmail.com"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+          src: "./images/icons/linkedin.png"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h3", {
+          children: "Linked In:  "
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+          href: "https://www.linkedin.com/in/brady-s-baker/",
+          rel: "noreferrer",
+          target: "_blank",
+          children: "brady-s-baker"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+          src: "./images/icons/github.png"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h3", {
+          children: "Github: "
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+          href: "https://github.com/BradySBaker",
+          rel: "noreferrer",
+          target: "_blank",
+          children: "BradySBaker"
+        })]
+      })]
+    })]
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contact);
 
 /***/ }),
 
@@ -121,6 +312,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var HomePage = function HomePage() {
+  var handleArrow = function handleArrow() {
+    var aboutElementPos = document.getElementById('about').getBoundingClientRect().top + window.scrollY;
+    console.log(aboutElementPos);
+    window.scrollTo({
+      top: aboutElementPos,
+      behavior: 'smooth'
+    });
+  };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
     id: _cssModules_homePage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].home,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
@@ -139,7 +338,8 @@ var HomePage = function HomePage() {
       children: "\"Embracing Challenges, Overcoming Roadblocks, Engineering Solutions\""
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
       src: "./images/icons/arrow-icon.gif",
-      id: _cssModules_homePage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].arrow
+      id: _cssModules_homePage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].arrow,
+      onClick: handleArrow
     })]
   });
 };
@@ -161,70 +361,248 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _smallWidgets_Project_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./smallWidgets/Project.jsx */ "./client/src/smallWidgets/Project.jsx");
 /* harmony import */ var _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cssModules/projectPage.module.css */ "./client/src/cssModules/projectPage.module.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _projectInfo_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./projectInfo.js */ "./client/src/projectInfo.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
 
-var toyShareContributions = ['Map Feature', 'Individual Toy Page', 'Toy Distance', 'Toy Locations', 'All Toy Backend Routes'];
-var fecContributions = ['Review List', 'Lazy Loading', 'Sort Reviews', 'Filter Reviews', 'Post Image Review', 'Review API fetch', {
-  text: 'Product MicroService',
-  style: {
-    backgroundColor: 'red'
-  }
-}];
-var toyShareDesc = 'ToyShare is a comprehensive application developed by a collaborative team, enabling users to effortlessly lend their toys to others or borrow playthings from fellow users.';
-var fecDesc = '  Grace Outfitters is a web app displaying relevant information for a single product in the catalog of an online retailer. It is composed of of Product Overview, Ratings & Reviews, Questions & Answers, and Related Items. The API is also composed of the main 3 microservices';
-var ledCanvasContributions = [{
-  text: 'Solo Project',
-  style: {
-    backgroundColor: 'red'
-  }
-}];
-var ledCanvasDesc = 'LED Canvas is an interactive pixel art device controlled via Bluetooth. There is a mobile-first web app to control the device, although it works on desktop. The device itself consists of an Arduino controller, microphone, Bluetooth module, 16x16 LED grid, and a custom 3D-printed casing.';
+
 var ProjectPage = function ProjectPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     id: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].widget,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
       className: "page-header",
       id: "projects",
       children: "Projects"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "underline"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h5", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h5", {
       children: "Below are some of my finished projects"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_smallWidgets_Project_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_smallWidgets_Project_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
       title: 'ToyShare',
       link: 'https://github.com/Team-4-BOC/ToyShare',
-      desc: toyShareDesc,
+      desc: _projectInfo_js__WEBPACK_IMPORTED_MODULE_3__["default"].toyshare.desc,
+      libraries: _projectInfo_js__WEBPACK_IMPORTED_MODULE_3__["default"].toyshare.libraries,
       gif: './images/projects/toyshare.gif',
-      contributions: toyShareContributions,
+      contributions: _projectInfo_js__WEBPACK_IMPORTED_MODULE_3__["default"].toyshare.contributions,
       type: 'phone'
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_smallWidgets_Project_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_smallWidgets_Project_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
       title: 'Grace Outfitters',
       title2: 'Backend',
       link: 'https://github.com/site-of-grace/FEC',
-      desc: fecDesc,
+      desc: _projectInfo_js__WEBPACK_IMPORTED_MODULE_3__["default"].fec.desc,
+      libraries: _projectInfo_js__WEBPACK_IMPORTED_MODULE_3__["default"].fec.libraries,
       gif: './images/projects/fec.gif',
-      contributions: fecContributions,
+      contributions: _projectInfo_js__WEBPACK_IMPORTED_MODULE_3__["default"].fec.contributions,
       type: 'laptop',
       link2: 'https://github.com/rpp2210-sdc-freesia/product-overview'
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_smallWidgets_Project_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      id: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].ps,
+      children: "This is just a video of the app click the video link below to see the device/app working in conjunction"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_smallWidgets_Project_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
       title: 'LED Canvas',
       title2: 'Arduino',
       title3: 'Video Of Device',
       gif: './images/projects/ledcanvas.gif',
-      desc: ledCanvasDesc,
-      contributions: ledCanvasContributions,
+      desc: _projectInfo_js__WEBPACK_IMPORTED_MODULE_3__["default"].ledCanvas.desc,
+      contributions: _projectInfo_js__WEBPACK_IMPORTED_MODULE_3__["default"].ledCanvas.contributions,
+      libraries: _projectInfo_js__WEBPACK_IMPORTED_MODULE_3__["default"].ledCanvas.libraries,
       link: 'https://github.com/BradySBaker/LED-Canvas-Frontend',
       link2: 'https://github.com/BradySBaker/LED-Canvas-Arduino',
       link3: 'https://www.youtube.com/watch?v=rL2p1DnfBfw',
       type: 'phone'
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_smallWidgets_Project_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      title: 'Multiplayer Web Game',
+      gif: './images/projects/multiplayerGame.gif',
+      desc: _projectInfo_js__WEBPACK_IMPORTED_MODULE_3__["default"].multiplayerGame.desc,
+      contributions: _projectInfo_js__WEBPACK_IMPORTED_MODULE_3__["default"].multiplayerGame.contributions,
+      libraries: _projectInfo_js__WEBPACK_IMPORTED_MODULE_3__["default"].multiplayerGame.libraries,
+      link: 'https://github.com/BradySBaker/TypeScript-SocketIO-Phaser-Game',
+      type: 'laptop'
     })]
   });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProjectPage);
+
+/***/ }),
+
+/***/ "./client/src/SmallProjectPage.jsx":
+/*!*****************************************!*\
+  !*** ./client/src/SmallProjectPage.jsx ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cssModules/projectPage.module.css */ "./client/src/cssModules/projectPage.module.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+var projects = [{
+  title: 'Python Game',
+  desc: 'A very simple python game using the Pygame library to help me learn python in a fun and exciting way!',
+  link: 'https://github.com/BradySBaker/Simple-Python-Game'
+}, {
+  title: 'Phaser.js Game',
+  desc: 'My first Phaser.js game[unfinished] includes a player arm that follows the mouse smoothly and bends. It features randomly generated pitfalls, gun recoil, and simple enemies.',
+  link: 'https://github.com/BradySBaker/Cosmic-Misery-2d-Platformer-?tab=readme-ov-file'
+}, {
+  title: 'Presentation creator',
+  desc: 'Allows users to easily create, delete, move, and edit slides using a dynamic editor. It features real-time preview and the ability to enhance presentations with moving sprites for quick interactive animations.',
+  link: 'https://github.com/BradySBaker/GameEnginePresentation'
+}, {
+  title: 'Book roulette',
+  desc: 'A app that displays random books allowing the user to add them to there library. Each book displays its information and link to purchase.',
+  link: 'https://github.com/BradySBaker/mvp'
+}, {
+  title: 'Many More',
+  desc: 'I have many more solo and team projects view them in my github repo!'
+}];
+var SmallProjectPage = function SmallProjectPage() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
+    _useState2 = _slicedToArray(_useState, 2),
+    hideList = _useState2[0],
+    setHideList = _useState2[1];
+  var linkClick = function linkClick(link) {
+    window.open(link, '_blank');
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    id: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].widget,
+    className: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].SmallProjectPage,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("h1", {
+      id: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].smallProjectButton,
+      children: ["----", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("h2", {
+        onClick: function onClick() {
+          return setHideList(function (hideList) {
+            return !hideList;
+          });
+        },
+        children: ["\uD83E\uDC3B", hideList ? 'View' : 'Hide', " Smaller Projects\uD83E\uDC3B"]
+      }), "----"]
+    }), !hideList ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      id: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].projectList,
+      children: projects.map(function (project) {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].smallProject,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
+            onClick: function onClick() {
+              if (project.link) {
+                linkClick(project.link);
+              }
+            },
+            children: project.title
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            children: project.desc
+          })]
+        });
+      })
+    }) : null]
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SmallProjectPage);
+
+/***/ }),
+
+/***/ "./client/src/projectInfo.js":
+/*!***********************************!*\
+  !*** ./client/src/projectInfo.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  toyshare: {
+    contributions: ['Map Feature', 'Individual Toy Page', 'Toy Distance', 'Toy Locations', 'All Toy Backend Routes'],
+    desc: 'ToyShare is a comprehensive application developed by a collaborative team, enabling users to effortlessly lend their toys to others or borrow from fellow users.',
+    libraries: ['Tailwind', 'React', 'PostgreSQL', 'Jest', 'Express', 'Axios, Mapbox-gl']
+  },
+  fec: {
+    contributions: ['Review List', 'Lazy Loading', 'Sort Reviews', 'Filter Reviews', 'Post Image Review', 'Review API fetch', {
+      text: 'Product MicroService',
+      style: {
+        backgroundColor: 'rgba(255, 0, 0, 0.466)'
+      }
+    }],
+    desc: 'Grace Outfitters is a web app displaying relevant information for a single product in the catalog of an online retailer. It is composed of Product Overview, Ratings & Reviews, Questions & Answers, and Related Items. The API is also composed of the main 3 microservices',
+    libraries: ['Node.js', 'Express', 'PostgreSQL', 'Redis', 'NGINX', 'Jest', 'K6', 'Docker', 'EC2', 'React-Redux', 'Jest', 'EC2/S3', 'Axios', 'Babel', 'Webpack', 'css-loader/style-loader']
+  },
+  ledCanvas: {
+    contributions: [{
+      text: 'Solo Project',
+      style: {
+        backgroundColor: 'rgba(255, 0, 0, 0.466)'
+      }
+    }],
+    desc: 'LED Canvas is an interactive pixel art device controlled via Bluetooth. There is a mobile-first web app to control the device, although it works on desktop. The device itself consists of an Arduino controller, microphone, Bluetooth module, 16x16 LED grid, and a custom 3D-printed casing.',
+    libraries: ['Arduino', 'React', 'P5ble', 'FastLED', 'React-Color', 'babel', 'css-loader/style-loader']
+  },
+  multiplayerGame: {
+    contributions: [{
+      text: 'Work In Progress',
+      style: {
+        backgroundColor: 'rgba(255, 0, 0, 0.466)'
+      }
+    }, {
+      text: 'Solo Project',
+      style: {
+        backgroundColor: 'rgba(255, 0, 0, 0.466)'
+      }
+    }],
+    desc: 'This multiplayer survival web game offers crafting, creature encounters, throwable weapons, and resource gathering in a randomly generated terrain. Crafted with TypeScript ensuring code reliability, Phaser.js providing smooth gameplay, and Socket.IO enabling seamless multiplayer interactions',
+    libraries: ['TypeScript', 'Socket.IO', 'Phaser.js', 'Parcel', 'React']
+  }
+});
+//
+
+/***/ }),
+
+/***/ "./client/src/skillInfo.js":
+/*!*********************************!*\
+  !*** ./client/src/skillInfo.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  JavaScript: 'JavaScript is a versatile programming language commonly used for web development to add interactivity and dynamic behavior.',
+  HTML: 'HTML (Hypertext Markup Language) is used for structuring content on the web.',
+  CSS: 'CSS (Cascading Style Sheets) is used for styling HTML elements, enhancing their appearance.',
+  'React.js': 'React.js is a JavaScript library for building user interfaces, using components and a virtual DOM.',
+  Git: 'Git is a version control system that helps in tracking changes and collaborating on code.',
+  'Node.js': 'Node.js allows running JavaScript on the server side, enabling backend development.',
+  Docker: 'Docker is a platform for containerizing applications, ensuring consistent deployment across environments.',
+  PostgreSQL: 'PostgreSQL is an open-source relational database management system.',
+  MySQL: 'MySQL is an open-source relational database known for its speed and reliability.',
+  MongoDB: 'MongoDB is a NoSQL database that stores data in flexible, JSON-like documents.',
+  Redux: 'Redux is a state management library often used with React for managing global application state.',
+  'EC2/S3': 'EC2 (Elastic Compute Cloud) provides scalable compute capacity, while S3 (Simple Storage Service) offers scalable object storage in AWS.',
+  'Babel.js': 'Babel.js is a transpiler that converts modern JavaScript code into older versions for better browser compatibility.',
+  Jest: 'Jest is a popular JavaScript testing framework known for its simplicity and speed.',
+  NginX: 'NginX is a web server that can also act as a reverse proxy, load balancer, and more.',
+  Python: 'Python is an interpreted, object-oriented, high-level programming language with dynamic semantics developed by Guido van Rossum',
+  'Socket.IO': 'Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server',
+  TypeScript: 'TypeScript is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript'
+});
 
 /***/ }),
 
@@ -292,6 +670,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ScrollAnimator_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ScrollAnimator.jsx */ "./client/src/smallWidgets/ScrollAnimator.jsx");
 /* harmony import */ var _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../cssModules/projectPage.module.css */ "./client/src/cssModules/projectPage.module.css");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
@@ -310,7 +694,12 @@ var Project = function Project(_ref) {
     title2 = _ref.title2,
     link2 = _ref.link2,
     title3 = _ref.title3,
-    link3 = _ref.link3;
+    link3 = _ref.link3,
+    libraries = _ref.libraries;
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    displayLibraries = _useState2[0],
+    setDisplayLibraries = _useState2[1];
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
     className: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].project,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
@@ -331,10 +720,10 @@ var Project = function Project(_ref) {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
         children: desc
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h4", {
-        children: "My Contributions"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        children: !displayLibraries ? 'My Contributions' : 'Libraries Used'
+      }), !displayLibraries ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
         id: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"]['contribution-list'],
-        children: contributions.map(function (curContr) {
+        children: [contributions.map(function (curContr) {
           if (curContr.text) {
             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
               className: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].contributions,
@@ -346,8 +735,30 @@ var Project = function Project(_ref) {
             className: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].contributions,
             children: curContr
           }, curContr);
-        })
-      }), title2 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h3", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].contributions,
+          id: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"]['library-contr-button'],
+          onClick: function onClick() {
+            return setDisplayLibraries(true);
+          },
+          children: "View Libraries"
+        })]
+      }) : null, displayLibraries ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        id: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"]['contribution-list'],
+        children: [libraries.map(function (library) {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+            className: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].contributions,
+            children: library
+          }, library);
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].contributions,
+          id: _cssModules_projectPage_module_css__WEBPACK_IMPORTED_MODULE_2__["default"]['library-contr-button'],
+          onClick: function onClick() {
+            return setDisplayLibraries(false);
+          },
+          children: "View Contributions"
+        })]
+      }) : null, title2 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h3", {
         onClick: function onClick() {
           return linkClick(link2);
         },
@@ -453,6 +864,7 @@ var ScrollAnimator = function ScrollAnimator(_ref) {
       var position = img.current.getBoundingClientRect().top;
       var newFrame;
       var positionMap = phone ? phonePositionMap : laptopPositionMap;
+      console.log(positionMap);
       for (var num in positionMap) {
         if (position <= num) {
           newFrame = positionMap[num];
@@ -487,6 +899,53 @@ var ScrollAnimator = function ScrollAnimator(_ref) {
 
 /***/ }),
 
+/***/ "./client/src/smallWidgets/ThankyouError.jsx":
+/*!***************************************************!*\
+  !*** ./client/src/smallWidgets/ThankyouError.jsx ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _cssModules_smallWidgetsStyles_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../cssModules/smallWidgetsStyles.module.css */ "./client/src/cssModules/smallWidgetsStyles.module.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+var ThankyouError = function ThankyouError(_ref) {
+  var ok = _ref.ok,
+    setApiValue = _ref.setApiValue;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    children: ok ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: _cssModules_smallWidgetsStyles_module_css__WEBPACK_IMPORTED_MODULE_1__["default"]['thankyou-error'],
+      children: "Thankyou for the email I will get to it as soon as possible!"
+    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: _cssModules_smallWidgetsStyles_module_css__WEBPACK_IMPORTED_MODULE_1__["default"]['thankyou-error'],
+        style: {
+          backgroundColor: 'red'
+        },
+        children: "There was an error submitting the email are you sure your email is accurate?"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+        className: _cssModules_smallWidgetsStyles_module_css__WEBPACK_IMPORTED_MODULE_1__["default"]['thankyou-error'],
+        onClick: function onClick() {
+          return setApiValue();
+        },
+        children: "Try Again"
+      })]
+    })
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ThankyouError);
+
+/***/ }),
+
 /***/ "./client/src/smallWidgets/TopBar.jsx":
 /*!********************************************!*\
   !*** ./client/src/smallWidgets/TopBar.jsx ***!
@@ -511,7 +970,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-var buttons = ['Home', 'Projects', 'About', 'Contact'];
+var buttons = ['Home', 'About', 'Projects', 'Contact'];
 var barPositionsWidth = {
   Home: {},
   Projects: {},
@@ -9961,14 +10420,20 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `#V0MdJ8r_jrQlUx76UrFD {
-  margin-top: 6vw;
-  margin-bottom: 10vw;
+___CSS_LOADER_EXPORT___.push([module.id, `#qSTqGunXEmLFIhTg8xNh {
+  margin-top: 25vw;
+  margin-bottom: 10em;
 }
 
-#V0MdJ8r_jrQlUx76UrFD h2 {
+#z5TmJ_rd1HlonjsqLIZ0 {
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
+.xkISj01QiagKGALUyCzz h2 {
   font-weight: bold;
   font-size: 1.6vw;
+  color: #c4c4c4;
 }
 
 #KDo5w3ETVLUcVgppd_3O {
@@ -9977,12 +10442,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#V0MdJ8r_jrQlUx76UrFD {
   margin: 0 10vw 0 10vw
 }
 
-#V0MdJ8r_jrQlUx76UrFD p {
+.xkISj01QiagKGALUyCzz p {
   max-width: 30vw;
-  font-size: 1.3vw;
-  font-weight: 300;
-  color: rgb(192, 192, 192);
-  word-spacing: .3vw;
+  font-size: 1.03vw;
+  font-weight: 700;
+  color: rgb(110, 110, 110);
+}
+
+.xkISj01QiagKGALUyCzz strong {
+  font-weight: 900;
+  color: rgba(160, 148, 131, 0.685);
 }
 
 #rXiAml_H6YpcS_5DWE_X {
@@ -9997,9 +10466,22 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#V0MdJ8r_jrQlUx76UrFD {
   background-color: #2c2c2c;
   padding: .7vw;
   border-radius: .5vw;
-  font-size:  1.3vw;
+  font-size:  1vw;
   white-space: nowrap;
   margin-bottom: .6vw;
+  color: rgb(206, 206, 206);
+  user-select: none;
+  transition: border .2s ease-in;
+}
+.bCE9z_EudBLiM3mhctbQ:hover {
+  border: 1px solid #002fff;
+}
+
+#Q0mcV3vZY3ipGZDdDjEx {
+  position: absolute;
+  color: rgba(255, 217, 0, 0.548);
+  font-size: 1vw;
+  text-decoration: underline;
 }
 
 #xDwv4vXuOqAC472inYQE {
@@ -10008,82 +10490,197 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#V0MdJ8r_jrQlUx76UrFD {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 5vw;
 }
 
 #alO8VmPBdbAt7sJY64Xg {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  left: -4%;
   color: white;
   font-weight: bold;
-  font-size: 2.5vw;
+  font-size: 2vw;
   background-color: #0072cf27;
-  border-radius: 1vw;
+  border-radius: .9vw;
   border: 4px solid #0073cf;
   padding: 5px;
   transition: background-color .5s ease;
-  margin-top: 3vw;
+  text-decoration: none;
 }
+
 
 #alO8VmPBdbAt7sJY64Xg:hover {
   background-color: #0073cf;
 }
 
-#V0MdJ8r_jrQlUx76UrFD h3 {
+.xkISj01QiagKGALUyCzz h3 {
   font-size: 1.5vw;
   display: inline;
 }
 
-#V0MdJ8r_jrQlUx76UrFD a {
+.xkISj01QiagKGALUyCzz a {
   font-size: 1.5vw;
   margin-right: 1vw;
   margin-left: 1vw;
   display: inline;
 }
 
-#V0MdJ8r_jrQlUx76UrFD img {
+.xkISj01QiagKGALUyCzz img {
   width: 2vw;
   display: inline;
   transform: translateY(20%);
 }
 
+#spsrm1pv70BbUg37LJDd {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+  border: 2px solid #ffffff;
+  background-color: #0072cf28;
+  padding: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  border-radius: 1em;
+  margin-bottom: 8%;
+}
+
+#spsrm1pv70BbUg37LJDd input, #spsrm1pv70BbUg37LJDd textarea {
+  padding: 1.4%;
+  color: rgb(199, 193, 138);
+  background-color: transparent;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 2px solid #ffffff;
+  font-weight:  900;
+  font-size: .9vw;
+  margin-bottom: 2em;
+}
+
+#spsrm1pv70BbUg37LJDd textarea {
+  resize: none;
+  height: 10vw;
+}
+
+#spsrm1pv70BbUg37LJDd label {
+  margin-bottom: 1em;
+  font-size: 1vw;
+}
+
+#spsrm1pv70BbUg37LJDd button {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  background-color: #002fff;
+  border-radius: .3em;
+  padding: 1.5%;
+  width: 20%;
+  margin-left: 80%;
+  font-size: 1vw;
+  transition: transform .2s ease-in;
+  font-weight: bold;
+  letter-spacing: .1vw;
+  border: none;
+}
+
+#spsrm1pv70BbUg37LJDd button:hover {
+  transform: translateY(-6px);
+  background-color: #002fffa1;
+}
+
+#Jpeiawrkn3FzD0GF3jq2 {
+  position: relative;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 2% 0 3% 0;
+}
+
+#MGORCc_jok9UzJpHFgFD {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5vw;
+}
+
+#ksd5Wsos2Y68Gbj2EYta {
+  transform: translate(-100%, 40%);
+  opacity: .7;
+}
+
 @media screen and (min-height: calc(100vw / .7)) { /* Mobile view*/
+  #qSTqGunXEmLFIhTg8xNh {
+    margin-top: 40vw;
+  }
+  #z5TmJ_rd1HlonjsqLIZ0 {
+    margin-bottom: 25%;
+  }
   #KDo5w3ETVLUcVgppd_3O {
     flex-direction: column;
-    transform: translateX(4vw);
+    width: 95vw;
+    transform: translateX(-7vw);
   }
   #rXiAml_H6YpcS_5DWE_X {
-    max-width: 90vw;
+    max-width: 100vw;
   }
-  #V0MdJ8r_jrQlUx76UrFD p {
-    font-size: 3vw;
-    max-width: 90vw;
+  .xkISj01QiagKGALUyCzz p {
+    font-size: 3.5vw;
+    max-width: 100vw;
   }
   .bCE9z_EudBLiM3mhctbQ {
+    font-size: 3.5vw;
+    border-radius: 1vw;
+    padding: 2vw;
+  }
+  .xkISj01QiagKGALUyCzz h2 {
+    font-size: 5vw;
+    margin-top: 10vw;
+  }
+  .xkISj01QiagKGALUyCzz h3 {
     font-size: 3vw;
   }
-  #V0MdJ8r_jrQlUx76UrFD h2 {
-    font-size: 3vw;
-  }
-  #V0MdJ8r_jrQlUx76UrFD h3 {
-    font-size: 3vw;
-  }
-  #V0MdJ8r_jrQlUx76UrFD a {
+  .xkISj01QiagKGALUyCzz a {
     font-size: 3vw;
   }
   #alO8VmPBdbAt7sJY64Xg {
-    font-size: 5vw;
+    font-size: 4vw;
+    border-radius: 2vw;
   }
-}`, "",{"version":3,"sources":["webpack://./client/src/cssModules/aboutContact.module.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,mBAAmB;AACrB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,6BAA6B;EAC7B;AACF;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,eAAe;EACf,eAAe;EACf,6BAA6B;AAC/B;;AAEA;EACE,kBAAkB;EAClB,yBAAyB;EACzB,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,eAAe;EACf,uBAAuB;EACvB,mBAAmB;EACnB,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,kBAAkB;EAClB,SAAS;EACT,2BAA2B;EAC3B,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;EAChB,2BAA2B;EAC3B,kBAAkB;EAClB,yBAAyB;EACzB,YAAY;EACZ,qCAAqC;EACrC,eAAe;AACjB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,gBAAgB;EAChB,eAAe;AACjB;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;EACjB,gBAAgB;EAChB,eAAe;AACjB;;AAEA;EACE,UAAU;EACV,eAAe;EACf,0BAA0B;AAC5B;;AAEA,mDAAmD,eAAe;EAChE;IACE,sBAAsB;IACtB,0BAA0B;EAC5B;EACA;IACE,eAAe;EACjB;EACA;IACE,cAAc;IACd,eAAe;EACjB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;AACF","sourcesContent":["#widget {\n  margin-top: 6vw;\n  margin-bottom: 10vw;\n}\n\n#widget h2 {\n  font-weight: bold;\n  font-size: 1.6vw;\n}\n\n#about-me-container {\n  display: flex;\n  justify-content: space-around;\n  margin: 0 10vw 0 10vw\n}\n\n#widget p {\n  max-width: 30vw;\n  font-size: 1.3vw;\n  font-weight: 300;\n  color: rgb(192, 192, 192);\n  word-spacing: .3vw;\n}\n\n#skills {\n  display: flex;\n  max-width: 30vw;\n  flex-wrap: wrap;\n  justify-content: space-evenly;\n}\n\n.skill {\n  margin-right: .6vw;\n  background-color: #2c2c2c;\n  padding: .7vw;\n  border-radius: .5vw;\n  font-size:  1.3vw;\n  white-space: nowrap;\n  margin-bottom: .6vw;\n}\n\n#contact-container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  margin-top: 5vw;\n}\n\n#resume-button {\n  position: absolute;\n  left: 50%;\n  transform: translateX(-50%);\n  color: white;\n  font-weight: bold;\n  font-size: 2.5vw;\n  background-color: #0072cf27;\n  border-radius: 1vw;\n  border: 4px solid #0073cf;\n  padding: 5px;\n  transition: background-color .5s ease;\n  margin-top: 3vw;\n}\n\n#resume-button:hover {\n  background-color: #0073cf;\n}\n\n#widget h3 {\n  font-size: 1.5vw;\n  display: inline;\n}\n\n#widget a {\n  font-size: 1.5vw;\n  margin-right: 1vw;\n  margin-left: 1vw;\n  display: inline;\n}\n\n#widget img {\n  width: 2vw;\n  display: inline;\n  transform: translateY(20%);\n}\n\n@media screen and (min-height: calc(100vw / .7)) { /* Mobile view*/\n  #about-me-container {\n    flex-direction: column;\n    transform: translateX(4vw);\n  }\n  #skills {\n    max-width: 90vw;\n  }\n  #widget p {\n    font-size: 3vw;\n    max-width: 90vw;\n  }\n  .skill {\n    font-size: 3vw;\n  }\n  #widget h2 {\n    font-size: 3vw;\n  }\n  #widget h3 {\n    font-size: 3vw;\n  }\n  #widget a {\n    font-size: 3vw;\n  }\n  #resume-button {\n    font-size: 5vw;\n  }\n}"],"sourceRoot":""}]);
+  #spsrm1pv70BbUg37LJDd textarea {
+    height: 30vw;
+  }
+  #spsrm1pv70BbUg37LJDd input, #spsrm1pv70BbUg37LJDd textarea {
+    font-size: 3vw;
+  }
+  #spsrm1pv70BbUg37LJDd {
+    max-width: 90vw;
+  }
+  #spsrm1pv70BbUg37LJDd button {
+    font-size: 2vw;
+  }
+  #spsrm1pv70BbUg37LJDd label {
+    font-size: 3vw;
+  }
+  .xkISj01QiagKGALUyCzz img {
+    width: 5vw;
+  }
+  #Q0mcV3vZY3ipGZDdDjEx {
+    font-size: 3vw;
+    text-align: center;
+  }
+}`, "",{"version":3,"sources":["webpack://./client/src/cssModules/aboutContact.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,6BAA6B;EAC7B;AACF;;AAEA;EACE,eAAe;EACf,iBAAiB;EACjB,gBAAgB;EAChB,yBAAyB;AAC3B;;AAEA;EACE,gBAAgB;EAChB,iCAAiC;AACnC;;AAEA;EACE,aAAa;EACb,eAAe;EACf,eAAe;EACf,6BAA6B;AAC/B;;AAEA;EACE,kBAAkB;EAClB,yBAAyB;EACzB,aAAa;EACb,mBAAmB;EACnB,eAAe;EACf,mBAAmB;EACnB,mBAAmB;EACnB,yBAAyB;EACzB,iBAAiB;EACjB,8BAA8B;AAChC;AACA;EACE,yBAAyB;AAC3B;;AAEA;EACE,kBAAkB;EAClB,+BAA+B;EAC/B,cAAc;EACd,0BAA0B;AAC5B;;AAEA;EACE,aAAa;EACb,eAAe;EACf,uBAAuB;EACvB,mBAAmB;EACnB,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,SAAS;EACT,YAAY;EACZ,iBAAiB;EACjB,cAAc;EACd,2BAA2B;EAC3B,mBAAmB;EACnB,yBAAyB;EACzB,YAAY;EACZ,qCAAqC;EACrC,qBAAqB;AACvB;;;AAGA;EACE,yBAAyB;AAC3B;;AAEA;EACE,gBAAgB;EAChB,eAAe;AACjB;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;EACjB,gBAAgB;EAChB,eAAe;AACjB;;AAEA;EACE,UAAU;EACV,eAAe;EACf,0BAA0B;AAC5B;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,sBAAsB;EACtB,eAAe;EACf,yBAAyB;EACzB,2BAA2B;EAC3B,WAAW;EACX,SAAS;EACT,2BAA2B;EAC3B,iBAAiB;EACjB,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,yBAAyB;EACzB,6BAA6B;EAC7B,4EAA4E;EAC5E,yBAAyB;EACzB,iBAAiB;EACjB,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,cAAc;AAChB;;AAEA;EACE,4EAA4E;EAC5E,YAAY;EACZ,yBAAyB;EACzB,mBAAmB;EACnB,aAAa;EACb,UAAU;EACV,gBAAgB;EAChB,cAAc;EACd,iCAAiC;EACjC,iBAAiB;EACjB,oBAAoB;EACpB,YAAY;AACd;;AAEA;EACE,2BAA2B;EAC3B,2BAA2B;AAC7B;;AAEA;EACE,kBAAkB;EAClB,kBAAkB;EAClB,SAAS;EACT,2BAA2B;EAC3B,iBAAiB;AACnB;;AAEA;EACE,kBAAkB;EAClB,SAAS;EACT,2BAA2B;EAC3B,UAAU;AACZ;;AAEA;EACE,gCAAgC;EAChC,WAAW;AACb;;AAEA,mDAAmD,eAAe;EAChE;IACE,gBAAgB;EAClB;EACA;IACE,kBAAkB;EACpB;EACA;IACE,sBAAsB;IACtB,WAAW;IACX,2BAA2B;EAC7B;EACA;IACE,gBAAgB;EAClB;EACA;IACE,gBAAgB;IAChB,gBAAgB;EAClB;EACA;IACE,gBAAgB;IAChB,kBAAkB;IAClB,YAAY;EACd;EACA;IACE,cAAc;IACd,gBAAgB;EAClB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;IACd,kBAAkB;EACpB;EACA;IACE,YAAY;EACd;EACA;IACE,cAAc;EAChB;EACA;IACE,eAAe;EACjB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;EACA;IACE,UAAU;EACZ;EACA;IACE,cAAc;IACd,kBAAkB;EACpB;AACF","sourcesContent":["#About {\n  margin-top: 25vw;\n  margin-bottom: 10em;\n}\n\n#Contact {\n  margin-top: 10%;\n  margin-bottom: 15%;\n}\n\n.widgets h2 {\n  font-weight: bold;\n  font-size: 1.6vw;\n  color: #c4c4c4;\n}\n\n#about-me-container {\n  display: flex;\n  justify-content: space-around;\n  margin: 0 10vw 0 10vw\n}\n\n.widgets p {\n  max-width: 30vw;\n  font-size: 1.03vw;\n  font-weight: 700;\n  color: rgb(110, 110, 110);\n}\n\n.widgets strong {\n  font-weight: 900;\n  color: rgba(160, 148, 131, 0.685);\n}\n\n#skills {\n  display: flex;\n  max-width: 30vw;\n  flex-wrap: wrap;\n  justify-content: space-evenly;\n}\n\n.skill {\n  margin-right: .6vw;\n  background-color: #2c2c2c;\n  padding: .7vw;\n  border-radius: .5vw;\n  font-size:  1vw;\n  white-space: nowrap;\n  margin-bottom: .6vw;\n  color: rgb(206, 206, 206);\n  user-select: none;\n  transition: border .2s ease-in;\n}\n.skill:hover {\n  border: 1px solid #002fff;\n}\n\n#infoDisplay {\n  position: absolute;\n  color: rgba(255, 217, 0, 0.548);\n  font-size: 1vw;\n  text-decoration: underline;\n}\n\n#contact-container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n}\n\n#resume-button {\n  position: relative;\n  left: -4%;\n  color: white;\n  font-weight: bold;\n  font-size: 2vw;\n  background-color: #0072cf27;\n  border-radius: .9vw;\n  border: 4px solid #0073cf;\n  padding: 5px;\n  transition: background-color .5s ease;\n  text-decoration: none;\n}\n\n\n#resume-button:hover {\n  background-color: #0073cf;\n}\n\n.widgets h3 {\n  font-size: 1.5vw;\n  display: inline;\n}\n\n.widgets a {\n  font-size: 1.5vw;\n  margin-right: 1vw;\n  margin-left: 1vw;\n  display: inline;\n}\n\n.widgets img {\n  width: 2vw;\n  display: inline;\n  transform: translateY(20%);\n}\n\n#message-form {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  max-width: 50vw;\n  border: 2px solid #ffffff;\n  background-color: #0072cf28;\n  padding: 2%;\n  left: 50%;\n  transform: translateX(-50%);\n  font-weight: bold;\n  border-radius: 1em;\n  margin-bottom: 8%;\n}\n\n#message-form input, #message-form textarea {\n  padding: 1.4%;\n  color: rgb(199, 193, 138);\n  background-color: transparent;\n  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n  border: 2px solid #ffffff;\n  font-weight:  900;\n  font-size: .9vw;\n  margin-bottom: 2em;\n}\n\n#message-form textarea {\n  resize: none;\n  height: 10vw;\n}\n\n#message-form label {\n  margin-bottom: 1em;\n  font-size: 1vw;\n}\n\n#message-form button {\n  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n  color: white;\n  background-color: #002fff;\n  border-radius: .3em;\n  padding: 1.5%;\n  width: 20%;\n  margin-left: 80%;\n  font-size: 1vw;\n  transition: transform .2s ease-in;\n  font-weight: bold;\n  letter-spacing: .1vw;\n  border: none;\n}\n\n#message-form button:hover {\n  transform: translateY(-6px);\n  background-color: #002fffa1;\n}\n\n#contact-me {\n  position: relative;\n  text-align: center;\n  left: 50%;\n  transform: translateX(-50%);\n  margin: 2% 0 3% 0;\n}\n\n#loading {\n  position: relative;\n  left: 50%;\n  transform: translateX(-50%);\n  width: 5vw;\n}\n\n#click-icon {\n  transform: translate(-100%, 40%);\n  opacity: .7;\n}\n\n@media screen and (min-height: calc(100vw / .7)) { /* Mobile view*/\n  #About {\n    margin-top: 40vw;\n  }\n  #Contact {\n    margin-bottom: 25%;\n  }\n  #about-me-container {\n    flex-direction: column;\n    width: 95vw;\n    transform: translateX(-7vw);\n  }\n  #skills {\n    max-width: 100vw;\n  }\n  .widgets p {\n    font-size: 3.5vw;\n    max-width: 100vw;\n  }\n  .skill {\n    font-size: 3.5vw;\n    border-radius: 1vw;\n    padding: 2vw;\n  }\n  .widgets h2 {\n    font-size: 5vw;\n    margin-top: 10vw;\n  }\n  .widgets h3 {\n    font-size: 3vw;\n  }\n  .widgets a {\n    font-size: 3vw;\n  }\n  #resume-button {\n    font-size: 4vw;\n    border-radius: 2vw;\n  }\n  #message-form textarea {\n    height: 30vw;\n  }\n  #message-form input, #message-form textarea {\n    font-size: 3vw;\n  }\n  #message-form {\n    max-width: 90vw;\n  }\n  #message-form button {\n    font-size: 2vw;\n  }\n  #message-form label {\n    font-size: 3vw;\n  }\n  .widgets img {\n    width: 5vw;\n  }\n  #infoDisplay {\n    font-size: 3vw;\n    text-align: center;\n  }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"widget": `V0MdJ8r_jrQlUx76UrFD`,
+	"About": `qSTqGunXEmLFIhTg8xNh`,
+	"Contact": `z5TmJ_rd1HlonjsqLIZ0`,
+	"widgets": `xkISj01QiagKGALUyCzz`,
 	"about-me-container": `KDo5w3ETVLUcVgppd_3O`,
 	"skills": `rXiAml_H6YpcS_5DWE_X`,
 	"skill": `bCE9z_EudBLiM3mhctbQ`,
+	"infoDisplay": `Q0mcV3vZY3ipGZDdDjEx`,
 	"contact-container": `xDwv4vXuOqAC472inYQE`,
-	"resume-button": `alO8VmPBdbAt7sJY64Xg`
+	"resume-button": `alO8VmPBdbAt7sJY64Xg`,
+	"message-form": `spsrm1pv70BbUg37LJDd`,
+	"contact-me": `Jpeiawrkn3FzD0GF3jq2`,
+	"loading": `MGORCc_jok9UzJpHFgFD`,
+	"click-icon": `ksd5Wsos2Y68Gbj2EYta`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10149,6 +10746,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#WIBmTzaOwpe6xbubSxWp {
   opacity: .7;
 }
 
+
 @media screen and (min-height: calc(100vw / .7)) { /* Mobile view */
   #FSQO7Xqns4Am2aX3ekTz {
     flex-direction: column;
@@ -10176,7 +10774,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#WIBmTzaOwpe6xbubSxWp {
   transform: translate(-50%, 6vw);
   width: 8vw;
   opacity: .3;
-}`, "",{"version":3,"sources":["webpack://./client/src/cssModules/homePage.module.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;EACE,SAAS;EACT,gBAAgB;EAChB,cAAc;EACd,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;EAChB,cAAc;EACd,WAAW;EACX,SAAS;AACX;;AAEA;EACE,kBAAkB;EAClB,gBAAgB;EAChB,gBAAgB;EAChB,WAAW;AACb;;AAEA,mDAAmD,gBAAgB;EACjE;IACE,sBAAsB;IACtB,gBAAgB;EAClB;EACA;IACE,cAAc;IACd,gBAAgB;EAClB;EACA;IACE,cAAc;IACd,gBAAgB;EAClB;EACA;IACE,cAAc;EAChB;EACA;IACE,gBAAgB;EAClB;AACF;;AAEA;EACE,kBAAkB;EAClB,SAAS;EACT,+BAA+B;EAC/B,UAAU;EACV,WAAW;AACb","sourcesContent":["#home {\n  position: relative;\n}\n\n#mainContainer {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding-top: 10%;\n  margin-bottom: 7vw;\n}\n\n#mainHeaders {\n  margin-left: 50px;\n  text-align: center;\n}\n\n#home h1 {\n  margin: 0;\n  font-weight: 600;\n  font-size: 4vw;\n  white-space: nowrap;\n  margin-bottom: 20px;\n}\n\n#home h2 {\n  font-weight: 300;\n  font-size: 2vw;\n  opacity: .8;\n  margin: 0;\n}\n\n#home h3 {\n  text-align: center;\n  font-weight: 100;\n  font-size: 1.5vw;\n  opacity: .7;\n}\n\n@media screen and (min-height: calc(100vw / .7)) { /* Mobile view */\n  #mainContainer {\n    flex-direction: column;\n    padding-top: 20%;\n  }\n  #mainHeaders {\n    margin-left: 0;\n    margin-top: 10px;\n  }\n  #home h1 {\n    font-size: 8vw;\n    margin-bottom: 0;\n  }\n  #home h2 {\n    font-size: 7vw;\n  }\n  #home h3 {\n    font-size: 3.5vw;\n  }\n}\n\n#arrow {\n  position: absolute;\n  left: 50%;\n  transform: translate(-50%, 6vw);\n  width: 8vw;\n  opacity: .3;\n}"],"sourceRoot":""}]);
+  transition: background-color .5s ease-in;
+  border-radius: 50%;
+}
+
+#nqTAPR8AruvqZAZ_TNDD:hover {
+  background-color: #0073cf;
+}`, "",{"version":3,"sources":["webpack://./client/src/cssModules/homePage.module.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;EACE,SAAS;EACT,gBAAgB;EAChB,cAAc;EACd,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;EAChB,cAAc;EACd,WAAW;EACX,SAAS;AACX;;AAEA;EACE,kBAAkB;EAClB,gBAAgB;EAChB,gBAAgB;EAChB,WAAW;AACb;;;AAGA,mDAAmD,gBAAgB;EACjE;IACE,sBAAsB;IACtB,gBAAgB;EAClB;EACA;IACE,cAAc;IACd,gBAAgB;EAClB;EACA;IACE,cAAc;IACd,gBAAgB;EAClB;EACA;IACE,cAAc;EAChB;EACA;IACE,gBAAgB;EAClB;AACF;;AAEA;EACE,kBAAkB;EAClB,SAAS;EACT,+BAA+B;EAC/B,UAAU;EACV,WAAW;EACX,wCAAwC;EACxC,kBAAkB;AACpB;;AAEA;EACE,yBAAyB;AAC3B","sourcesContent":["#home {\n  position: relative;\n}\n\n#mainContainer {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding-top: 10%;\n  margin-bottom: 7vw;\n}\n\n#mainHeaders {\n  margin-left: 50px;\n  text-align: center;\n}\n\n#home h1 {\n  margin: 0;\n  font-weight: 600;\n  font-size: 4vw;\n  white-space: nowrap;\n  margin-bottom: 20px;\n}\n\n#home h2 {\n  font-weight: 300;\n  font-size: 2vw;\n  opacity: .8;\n  margin: 0;\n}\n\n#home h3 {\n  text-align: center;\n  font-weight: 100;\n  font-size: 1.5vw;\n  opacity: .7;\n}\n\n\n@media screen and (min-height: calc(100vw / .7)) { /* Mobile view */\n  #mainContainer {\n    flex-direction: column;\n    padding-top: 20%;\n  }\n  #mainHeaders {\n    margin-left: 0;\n    margin-top: 10px;\n  }\n  #home h1 {\n    font-size: 8vw;\n    margin-bottom: 0;\n  }\n  #home h2 {\n    font-size: 7vw;\n  }\n  #home h3 {\n    font-size: 3.5vw;\n  }\n}\n\n#arrow {\n  position: absolute;\n  left: 50%;\n  transform: translate(-50%, 6vw);\n  width: 8vw;\n  opacity: .3;\n  transition: background-color .5s ease-in;\n  border-radius: 50%;\n}\n\n#arrow:hover {\n  background-color: #0073cf;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"home": `WIBmTzaOwpe6xbubSxWp`,
@@ -10209,7 +10813,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `#vLfPEIH9YSEyuGsFJ4zT {
-  margin-top: 25vw;
+  margin-top: 10vw;
 }
 
 #vLfPEIH9YSEyuGsFJ4zT h5 {
@@ -10220,7 +10824,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#vLfPEIH9YSEyuGsFJ4zT {
   opacity: .6;
   margin-top: 3%;
 }
-
 
 #zeHkcdxBbyQGQMfxob0R {
   transform: translateX(-8vw);
@@ -10234,16 +10837,19 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#vLfPEIH9YSEyuGsFJ4zT {
 .xI8wjMJ62gyN5Df3IXDw {
   display: flex;
   justify-content: space-between;
-  margin: 0 5vw 0 5vw;
+  border: 1px solid rgb(133, 133, 133);
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 
-#vLfPEIH9YSEyuGsFJ4zT h2, #vLfPEIH9YSEyuGsFJ4zT h3 {
+#vLfPEIH9YSEyuGsFJ4zT h2,
+#vLfPEIH9YSEyuGsFJ4zT h3 {
   position: relative;
   width: fit-content;
   font-weight: bold;
-  border: 4px solid #0073cf;
+  border: 2px solid #0073cf;
   background-color: #0072cf27;
-  border-radius: 10px;
+  border-radius: .5vw;
   cursor: pointer;
   transition: background-color 0.3s ease;
   padding: 5px;
@@ -10255,12 +10861,21 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#vLfPEIH9YSEyuGsFJ4zT {
 #vLfPEIH9YSEyuGsFJ4zT h2 {
   font-size: 2vw;
 }
+
 #vLfPEIH9YSEyuGsFJ4zT h3 {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
+  opacity: .9;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  background-color: #0072cf27;
+  border: 1px solid #002fff;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  padding: .5vw;
 }
 
-
-#vLfPEIH9YSEyuGsFJ4zT h2:hover, #vLfPEIH9YSEyuGsFJ4zT h3:hover {
+#vLfPEIH9YSEyuGsFJ4zT h2:hover,
+#vLfPEIH9YSEyuGsFJ4zT h3:hover {
   background-color: #0073cf;
 }
 
@@ -10292,70 +10907,149 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#vLfPEIH9YSEyuGsFJ4zT {
   background-color: #2c2c2c;
   padding: .6vw;
   border-radius: .5vw;
-  font-size: .7vw;
+  font-size: 1vw;
   white-space: nowrap;
   margin-bottom: .6vw;
 }
 
 #blxeDCghlOZje_wdOUlF {
   display: flex;
-  max-width: 50vw;
+  max-width: 40vw;
   min-width: 40vw;
   flex-wrap: wrap;
 }
 
 
+#MlB6nvrBgoSL9LQCh8Xl {
+  background-color: #0072cf27;
+  border: 2px solid #002fff;
+  user-select: none; transition:
+  background-color 0.3s ease;
+}
+
+#MlB6nvrBgoSL9LQCh8Xl:hover { background-color: #002fff; }
+
+
+#g7tOV3oinF2OCnrGZKj3 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -130%);
+}
+
+#vLfPEIH9YSEyuGsFJ4zT.Zpc77tljDKEX17cP0x6R h3 {
+  max-height: 3vw;
+}
+
+.Zrw0Sp6j07lJcGMinASE {
+  display: flex;
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+}
+
+#Yd2UlahIsVFBWx1xegbg {
+  position: absolute;
+  font-size: .7vw;
+  font-style: italic;
+  max-width: 15vw;
+  transform: translate(100%, 150%);
+  color: rgba(255, 255, 255, 0.233);
+  font-weight: 300;
+}
+
 @media screen and (min-height: calc(100vw / .7)) {
   .xI8wjMJ62gyN5Df3IXDw {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   }
+
   #zMSAhaLQDsZkNTn2Kz5L, #zeHkcdxBbyQGQMfxob0R {
-    transform: translateX(0);
+      transform: translateX(0);
   }
+
   #Oa2oVaZhtZyIXV2O6fRD {
-    transform: translate(0, -20vw);
-    margin: 0;
+      transform: translate(0, -20vw);
+      margin: 0;
   }
+
   #AvrBdmdgguUEyIntKlra {
-    transform: translate(0, -12vw);
+      transform: translate(0, -12vw);
   }
+
   #vLfPEIH9YSEyuGsFJ4zT p {
-    font-size: 4vw;
-    max-width: 90vw;
+      font-size: 4vw;
+      max-width: 90vw;
   }
+
+  #vLfPEIH9YSEyuGsFJ4zT h2, #vLfPEIH9YSEyuGsFJ4zT h3 {
+      border-radius: 2vw;
+      border: 1px solid #0073cf;
+  }
+
   #vLfPEIH9YSEyuGsFJ4zT h2 {
-    font-size: 4vw;
+      font-size: 5vw;
   }
+
   #blxeDCghlOZje_wdOUlF {
-    max-width: 100vw;
-    justify-content: center;
+      max-width: 100vw;
+      justify-content: center;
   }
+
   .Bl5mfA21rAlPLmrI5yQZ {
-    font-size: 2.3vw;
+      font-size: 3.4vw;
+      border-radius: 1.5vw;
+      padding: 1vw;
   }
+
   #vLfPEIH9YSEyuGsFJ4zT h4 {
-    font-size: 4vw;
+      font-size: 4vw;
   }
+
   #vLfPEIH9YSEyuGsFJ4zT pageHeader {
-    font-size: 8vw;
+      font-size: 8vw;
   }
+
   #gLQfsnOM0NyxEZVCq2l7 {
-    width: 10%;
-    height: 2vw;
-    background-color: #0073cf;
-    left: 50%;
-    transform: translate(-50%, -100%);
+      width: 10%;
+      height: 2vw;
+      background-color: #0073cf;
+      left: 50%;
+      transform: translate(-50%, -100%);
   }
+
   #vLfPEIH9YSEyuGsFJ4zT h5 {
-    font-size: 2vw;
+      font-size: 3vw;
   }
+
   #vLfPEIH9YSEyuGsFJ4zT h3 {
-    font-size: 3.5vw;
+      font-size: 5vw;
+  }
+  #Yd2UlahIsVFBWx1xegbg {
+    font-size: 2vw;
+    font-style: italic;
+    max-width: 40vw;
+    transform: translate(75%, 200%);
+  }
+  .Zrw0Sp6j07lJcGMinASE {
+    width: 100%;
+  }
+  #vLfPEIH9YSEyuGsFJ4zT.Zpc77tljDKEX17cP0x6R h3 {
+    font-size: 3.3vw;
+    background-color: red;
+    max-height: 10vw;
+  }
+  #vLfPEIH9YSEyuGsFJ4zT.Zpc77tljDKEX17cP0x6R p {
+    font-size: 3vw;
+  }
+  #vLfPEIH9YSEyuGsFJ4zT.Zpc77tljDKEX17cP0x6R {
+    margin-top: 400px;
+    margin-bottom: 300px;
   }
 }
-`, "",{"version":3,"sources":["webpack://./client/src/cssModules/projectPage.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,gBAAgB;EAChB,kBAAkB;EAClB,kBAAkB;EAClB,WAAW;EACX,cAAc;AAChB;;;AAGA;EACE,2BAA2B;AAC7B;;AAEA;EACE,kBAAkB;EAClB,2BAA2B;AAC7B;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,kBAAkB;EAClB,iBAAiB;EACjB,yBAAyB;EACzB,2BAA2B;EAC3B,mBAAmB;EACnB,eAAe;EACf,sCAAsC;EACtC,YAAY;EACZ,iBAAiB;EACjB,qBAAqB;EACrB,kBAAkB;AACpB;;AAEA;EACE,cAAc;AAChB;AACA;EACE,gBAAgB;AAClB;;;AAGA;EACE,yBAAyB;AAC3B;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,yBAAyB;EACzB,SAAS;AACX;;AAEA;EACE,gBAAgB;EAChB,iCAAiC;AACnC;;AAEA;EACE,iCAAiC;AACnC;;AAEA;EACE,gBAAgB;EAChB,gBAAgB;EAChB,WAAW;AACb;;AAEA;EACE,kBAAkB;EAClB,yBAAyB;EACzB,aAAa;EACb,mBAAmB;EACnB,eAAe;EACf,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,eAAe;EACf,eAAe;EACf,eAAe;AACjB;;;AAGA;EACE;IACE,sBAAsB;IACtB,mBAAmB;IACnB,kBAAkB;EACpB;EACA;IACE,wBAAwB;EAC1B;EACA;IACE,8BAA8B;IAC9B,SAAS;EACX;EACA;IACE,8BAA8B;EAChC;EACA;IACE,cAAc;IACd,eAAe;EACjB;EACA;IACE,cAAc;EAChB;EACA;IACE,gBAAgB;IAChB,uBAAuB;EACzB;EACA;IACE,gBAAgB;EAClB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;EACA;IACE,UAAU;IACV,WAAW;IACX,yBAAyB;IACzB,SAAS;IACT,iCAAiC;EACnC;EACA;IACE,cAAc;EAChB;EACA;IACE,gBAAgB;EAClB;AACF","sourcesContent":["#widget {\n  margin-top: 25vw;\n}\n\n#widget h5 {\n  font-size: 1.5vw;\n  font-weight: 100;\n  font-style: italic;\n  text-align: center;\n  opacity: .6;\n  margin-top: 3%;\n}\n\n\n#laptop {\n  transform: translateX(-8vw);\n}\n\n#phone {\n  width: fit-content;\n  transform: translateX(10vw);\n}\n\n.project {\n  display: flex;\n  justify-content: space-between;\n  margin: 0 5vw 0 5vw;\n}\n\n#widget h2, #widget h3 {\n  position: relative;\n  width: fit-content;\n  font-weight: bold;\n  border: 4px solid #0073cf;\n  background-color: #0072cf27;\n  border-radius: 10px;\n  cursor: pointer;\n  transition: background-color 0.3s ease;\n  padding: 5px;\n  user-select: none;\n  display: inline-block;\n  margin-right: 10px;\n}\n\n#widget h2 {\n  font-size: 2vw;\n}\n#widget h3 {\n  font-size: 1.5vw;\n}\n\n\n#widget h2:hover, #widget h3:hover {\n  background-color: #0073cf;\n}\n\n#widget p {\n  max-width: 40vw;\n  font-size: 1.5vw;\n  font-weight: 300;\n  color: rgb(192, 192, 192);\n  margin: 0;\n}\n\n#phone-description {\n  margin-top: 10vw;\n  transform: translate(-10vw, -5vw);\n}\n\n#laptop-description {\n  transform: translate(-14vw, -1vw);\n}\n\n#widget h4 {\n  font-weight: 500;\n  font-size: 1.3vw;\n  opacity: .9;\n}\n\n.contributions {\n  margin-right: .6vw;\n  background-color: #2c2c2c;\n  padding: .6vw;\n  border-radius: .5vw;\n  font-size: .7vw;\n  white-space: nowrap;\n  margin-bottom: .6vw;\n}\n\n#contribution-list {\n  display: flex;\n  max-width: 50vw;\n  min-width: 40vw;\n  flex-wrap: wrap;\n}\n\n\n@media screen and (min-height: calc(100vw / .7)) {\n  .project {\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n  }\n  #phone, #laptop {\n    transform: translateX(0);\n  }\n  #phone-description {\n    transform: translate(0, -20vw);\n    margin: 0;\n  }\n  #laptop-description {\n    transform: translate(0, -12vw);\n  }\n  #widget p {\n    font-size: 4vw;\n    max-width: 90vw;\n  }\n  #widget h2 {\n    font-size: 4vw;\n  }\n  #contribution-list {\n    max-width: 100vw;\n    justify-content: center;\n  }\n  .contributions {\n    font-size: 2.3vw;\n  }\n  #widget h4 {\n    font-size: 4vw;\n  }\n  #widget pageHeader {\n    font-size: 8vw;\n  }\n  #underline {\n    width: 10%;\n    height: 2vw;\n    background-color: #0073cf;\n    left: 50%;\n    transform: translate(-50%, -100%);\n  }\n  #widget h5 {\n    font-size: 2vw;\n  }\n  #widget h3 {\n    font-size: 3.5vw;\n  }\n}\n"],"sourceRoot":""}]);
+
+`, "",{"version":3,"sources":["webpack://./client/src/cssModules/projectPage.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,gBAAgB;EAChB,kBAAkB;EAClB,kBAAkB;EAClB,WAAW;EACX,cAAc;AAChB;;AAEA;EACE,2BAA2B;AAC7B;;AAEA;EACE,kBAAkB;EAClB,2BAA2B;AAC7B;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,oCAAoC;EACpC,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;;EAEE,kBAAkB;EAClB,kBAAkB;EAClB,iBAAiB;EACjB,yBAAyB;EACzB,2BAA2B;EAC3B,mBAAmB;EACnB,eAAe;EACf,sCAAsC;EACtC,YAAY;EACZ,iBAAiB;EACjB,qBAAqB;EACrB,kBAAkB;AACpB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,WAAW;EACX,gBAAgB;EAChB,yBAAyB;EACzB,2BAA2B;EAC3B,yBAAyB;EACzB,iBAAiB;EACjB,sCAAsC;EACtC,aAAa;AACf;;AAEA;;EAEE,yBAAyB;AAC3B;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,yBAAyB;EACzB,SAAS;AACX;;AAEA;EACE,gBAAgB;EAChB,iCAAiC;AACnC;;AAEA;EACE,iCAAiC;AACnC;;AAEA;EACE,gBAAgB;EAChB,gBAAgB;EAChB,WAAW;AACb;;AAEA;EACE,kBAAkB;EAClB,yBAAyB;EACzB,aAAa;EACb,mBAAmB;EACnB,cAAc;EACd,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,eAAe;EACf,eAAe;EACf,eAAe;AACjB;;;AAGA;EACE,2BAA2B;EAC3B,yBAAyB;EACzB,iBAAiB,EAAE;4BACO;AAC5B;;AAEA,8BAA8B,yBAAyB,EAAE;;;AAGzD;EACE,kBAAkB;EAClB,SAAS;EACT,iCAAiC;AACnC;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,gBAAgB;EAChB,2BAA2B;EAC3B,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,eAAe;EACf,kBAAkB;EAClB,eAAe;EACf,gCAAgC;EAChC,iCAAiC;EACjC,gBAAgB;AAClB;;AAEA;EACE;MACI,sBAAsB;MACtB,mBAAmB;MACnB,kBAAkB;EACtB;;EAEA;MACI,wBAAwB;EAC5B;;EAEA;MACI,8BAA8B;MAC9B,SAAS;EACb;;EAEA;MACI,8BAA8B;EAClC;;EAEA;MACI,cAAc;MACd,eAAe;EACnB;;EAEA;MACI,kBAAkB;MAClB,yBAAyB;EAC7B;;EAEA;MACI,cAAc;EAClB;;EAEA;MACI,gBAAgB;MAChB,uBAAuB;EAC3B;;EAEA;MACI,gBAAgB;MAChB,oBAAoB;MACpB,YAAY;EAChB;;EAEA;MACI,cAAc;EAClB;;EAEA;MACI,cAAc;EAClB;;EAEA;MACI,UAAU;MACV,WAAW;MACX,yBAAyB;MACzB,SAAS;MACT,iCAAiC;EACrC;;EAEA;MACI,cAAc;EAClB;;EAEA;MACI,cAAc;EAClB;EACA;IACE,cAAc;IACd,kBAAkB;IAClB,eAAe;IACf,+BAA+B;EACjC;EACA;IACE,WAAW;EACb;EACA;IACE,gBAAgB;IAChB,qBAAqB;IACrB,gBAAgB;EAClB;EACA;IACE,cAAc;EAChB;EACA;IACE,iBAAiB;IACjB,oBAAoB;EACtB;AACF","sourcesContent":["#widget {\n  margin-top: 10vw;\n}\n\n#widget h5 {\n  font-size: 1.5vw;\n  font-weight: 100;\n  font-style: italic;\n  text-align: center;\n  opacity: .6;\n  margin-top: 3%;\n}\n\n#laptop {\n  transform: translateX(-8vw);\n}\n\n#phone {\n  width: fit-content;\n  transform: translateX(10vw);\n}\n\n.project {\n  display: flex;\n  justify-content: space-between;\n  border: 1px solid rgb(133, 133, 133);\n  border-radius: 10px;\n  margin-bottom: 30px;\n}\n\n#widget h2,\n#widget h3 {\n  position: relative;\n  width: fit-content;\n  font-weight: bold;\n  border: 2px solid #0073cf;\n  background-color: #0072cf27;\n  border-radius: .5vw;\n  cursor: pointer;\n  transition: background-color 0.3s ease;\n  padding: 5px;\n  user-select: none;\n  display: inline-block;\n  margin-right: 10px;\n}\n\n#widget h2 {\n  font-size: 2vw;\n}\n\n#widget h3 {\n  font-size: 1.2vw;\n  opacity: .9;\n  font-weight: 400;\n  color: rgb(255, 255, 255);\n  background-color: #0072cf27;\n  border: 1px solid #002fff;\n  user-select: none;\n  transition: background-color 0.3s ease;\n  padding: .5vw;\n}\n\n#widget h2:hover,\n#widget h3:hover {\n  background-color: #0073cf;\n}\n\n#widget p {\n  max-width: 40vw;\n  font-size: 1.5vw;\n  font-weight: 300;\n  color: rgb(192, 192, 192);\n  margin: 0;\n}\n\n#phone-description {\n  margin-top: 10vw;\n  transform: translate(-10vw, -5vw);\n}\n\n#laptop-description {\n  transform: translate(-14vw, -1vw);\n}\n\n#widget h4 {\n  font-weight: 500;\n  font-size: 1.3vw;\n  opacity: .9;\n}\n\n.contributions {\n  margin-right: .6vw;\n  background-color: #2c2c2c;\n  padding: .6vw;\n  border-radius: .5vw;\n  font-size: 1vw;\n  white-space: nowrap;\n  margin-bottom: .6vw;\n}\n\n#contribution-list {\n  display: flex;\n  max-width: 40vw;\n  min-width: 40vw;\n  flex-wrap: wrap;\n}\n\n\n#library-contr-button {\n  background-color: #0072cf27;\n  border: 2px solid #002fff;\n  user-select: none; transition:\n  background-color 0.3s ease;\n}\n\n#library-contr-button:hover { background-color: #002fff; }\n\n\n#smallProjectButton {\n  position: absolute;\n  left: 50%;\n  transform: translate(-50%, -130%);\n}\n\n#widget.SmallProjectPage h3 {\n  max-height: 3vw;\n}\n\n.smallProject {\n  display: flex;\n  position: relative;\n  margin-left: 50%;\n  transform: translateX(-50%);\n  margin-bottom: 50px;\n}\n\n#ps {\n  position: absolute;\n  font-size: .7vw;\n  font-style: italic;\n  max-width: 15vw;\n  transform: translate(100%, 150%);\n  color: rgba(255, 255, 255, 0.233);\n  font-weight: 300;\n}\n\n@media screen and (min-height: calc(100vw / .7)) {\n  .project {\n      flex-direction: column;\n      align-items: center;\n      text-align: center;\n  }\n\n  #phone, #laptop {\n      transform: translateX(0);\n  }\n\n  #phone-description {\n      transform: translate(0, -20vw);\n      margin: 0;\n  }\n\n  #laptop-description {\n      transform: translate(0, -12vw);\n  }\n\n  #widget p {\n      font-size: 4vw;\n      max-width: 90vw;\n  }\n\n  #widget h2, #widget h3 {\n      border-radius: 2vw;\n      border: 1px solid #0073cf;\n  }\n\n  #widget h2 {\n      font-size: 5vw;\n  }\n\n  #contribution-list {\n      max-width: 100vw;\n      justify-content: center;\n  }\n\n  .contributions {\n      font-size: 3.4vw;\n      border-radius: 1.5vw;\n      padding: 1vw;\n  }\n\n  #widget h4 {\n      font-size: 4vw;\n  }\n\n  #widget pageHeader {\n      font-size: 8vw;\n  }\n\n  #underline {\n      width: 10%;\n      height: 2vw;\n      background-color: #0073cf;\n      left: 50%;\n      transform: translate(-50%, -100%);\n  }\n\n  #widget h5 {\n      font-size: 3vw;\n  }\n\n  #widget h3 {\n      font-size: 5vw;\n  }\n  #ps {\n    font-size: 2vw;\n    font-style: italic;\n    max-width: 40vw;\n    transform: translate(75%, 200%);\n  }\n  .smallProject {\n    width: 100%;\n  }\n  #widget.SmallProjectPage h3 {\n    font-size: 3.3vw;\n    background-color: red;\n    max-height: 10vw;\n  }\n  #widget.SmallProjectPage p {\n    font-size: 3vw;\n  }\n  #widget.SmallProjectPage {\n    margin-top: 400px;\n    margin-bottom: 300px;\n  }\n}\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"widget": `vLfPEIH9YSEyuGsFJ4zT`,
@@ -10366,6 +11060,11 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"laptop-description": `AvrBdmdgguUEyIntKlra`,
 	"contributions": `Bl5mfA21rAlPLmrI5yQZ`,
 	"contribution-list": `blxeDCghlOZje_wdOUlF`,
+	"library-contr-button": `MlB6nvrBgoSL9LQCh8Xl`,
+	"smallProjectButton": `g7tOV3oinF2OCnrGZKj3`,
+	"SmallProjectPage": `Zpc77tljDKEX17cP0x6R`,
+	"smallProject": `Zrw0Sp6j07lJcGMinASE`,
+	"ps": `Yd2UlahIsVFBWx1xegbg`,
 	"underline": `gLQfsnOM0NyxEZVCq2l7`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -10476,7 +11175,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#EoTcwxGYcyMrFE02Tiql {
 }
 
 #jaB7Pzk0gQog4RqEBEIK {
+  position: absolute;
   width: 100vw;
+  z-index: -1;
+  pointer-events: none;
 }
 
 @keyframes sFn33cLMm9pfENciX0oQ {
@@ -10484,6 +11186,17 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#EoTcwxGYcyMrFE02Tiql {
   100% { opacity: 1; }
 }
 
+.ucT_n_l1NqCuslqMMej7 {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2vw;
+  color: rgb(255, 255, 255);
+  background-color: green;
+  width: fit-content;
+  border-radius: .5vw;
+  margin: 1em;
+}
 
 @media screen and (min-height: calc(100vw / .7)) { /* Mobile view */
   .GaDAD5Xpj_72IIdJZJ46 {
@@ -10504,6 +11217,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#EoTcwxGYcyMrFE02Tiql {
   #L8pXFlBKWwov1CqMH2gr {
     height: .5vw;
   }
+  .ucT_n_l1NqCuslqMMej7 {
+    font-size: 3vw;
+  }
     /* Firefox-specific rule */
   @supports (-moz-appearance: none) {
     #RMR5wPuxH_c79CLmZNZP {
@@ -10512,7 +11228,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#EoTcwxGYcyMrFE02Tiql {
     }
   }
 }
-`, "",{"version":3,"sources":["webpack://./client/src/cssModules/smallWidgetsStyles.module.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,gBAAgB;EAChB,iBAAiB;EACjB,qBAAqB;EACrB,wBAAwB;EACxB,+CAA+C;AACjD;;AAEA;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,gCAAgC;EAChC,WAAW;EACX,UAAU;AACZ;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;EAC7B,YAAY;EACZ,eAAe;EACf,sCAAsC;EACtC,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,MAAM;EACN,WAAW;AACb;;AAEA;EACE,YAAY;EACZ,QAAQ;EACR,QAAQ;EACR;AACF;;AAEA;EACE,gBAAgB;EAChB,6BAA6B;EAC7B,YAAY;EACZ,YAAY;EACZ,gBAAgB;EAChB,WAAW;EACX,4BAA4B;AAC9B;;AAEA;EACE,UAAU;EACV,gBAAgB;AAClB;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,kBAAkB;EAClB,mCAAmC;EACnC,mCAAqB;EACrB,aAAa;AACf;;AAEA;EACE,kBAAkB;EAClB,kCAAkC;EAClC,aAAa;EACb,mCAAqB;EACrB,mBAAmB;AACrB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,KAAK,UAAU,EAAE;EACjB,OAAO,UAAU,EAAE;AACrB;;;AAGA,mDAAmD,gBAAgB;EACjE;IACE,cAAc;EAChB;EACA;IACE,WAAW;EACb;EACA;IACE,YAAY;IACZ,4BAA4B;EAC9B;EACA;IACE,cAAc;IACd,mCAAmC;IACnC,kBAAkB;EACpB;EACA;IACE,YAAY;EACd;IACE,0BAA0B;EAC5B;IACE;MACE,gDAAgD;MAChD,gCAAgC;IAClC;EACF;AACF","sourcesContent":["#profile-icon {\n  position: relative;\n  border-radius: 20%;\n  width: 10vw;\n  height: 12vw;\n  min-width: 100px;\n  min-height: 120px;\n  background-size: 400%;\n  background-position: top;\n  transition: background-position-y 0.3s ease-out;\n}\n\n#profile-icon img {\n  position: absolute;\n  top: 55%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  height: 90%;\n  z-index: 2;\n}\n\n#top-bar {\n  display: flex;\n  align-items: center;\n  justify-content: space-around;\n  width: 100vw;\n  cursor: pointer;\n  background-color: rgba(5, 5, 5, 0.356);\n  padding: 10px 0 10px 0;\n  border-radius: 10px;\n}\n\n#top-element {\n  position: fixed;\n  top: 0;\n  z-index: 10;\n}\n\n#bar {\n  height: .2vw;\n  rx: .1vw;\n  ry: .1vw;\n  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255))\n}\n\n.top-buttons {\n  font-weight: 100;\n  background-color: transparent;\n  color: white;\n  border: none;\n  font-size: 1.5vw;\n  opacity: .7;\n  transition: opacity .4s ease;\n}\n\n.top-buttons:hover {\n  opacity: 1;\n  font-weight: 300;\n}\n\n#phone-animator {\n  width: 22vw;\n}\n\n#laptop-animator {\n  width: 58vw;\n}\n\n#phoneImg {\n  position: absolute;\n  transform: translate(-106.6%, 2.7%);\n  animation: fadeIn .5s;\n  width: 22.1vw;\n}\n\n#laptopImg {\n  position: absolute;\n  transform: translate(-154.1%, 35%);\n  width: 28.2vw;\n  animation: fadeIn .5s;\n  border-radius: .3vw;\n}\n\n#scroll-bar {\n  width: 100vw;\n}\n\n@keyframes fadeIn {\n  0% { opacity: 0; }\n  100% { opacity: 1; }\n}\n\n\n@media screen and (min-height: calc(100vw / .7)) { /* Mobile view */\n  .top-buttons {\n    font-size: 3vw;\n  }\n  #phone-animator, #phoneImg {\n    width: 70vw;\n  }\n  #laptop-animator {\n    width: 150vw;\n    transform: translateX(-23vw);\n  }\n  #laptopImg {\n    width: 72.75vw;\n    transform: translate(-48.5%, -174%);\n    border-radius: 1vw;\n  }\n  #bar {\n    height: .5vw;\n  }\n    /* Firefox-specific rule */\n  @supports (-moz-appearance: none) {\n    #laptopImg {\n      /* Adjust the properties as needed for Firefox */\n      transform: translate(-186%, 35%);\n    }\n  }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./client/src/cssModules/smallWidgetsStyles.module.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,gBAAgB;EAChB,iBAAiB;EACjB,qBAAqB;EACrB,wBAAwB;EACxB,+CAA+C;AACjD;;AAEA;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,gCAAgC;EAChC,WAAW;EACX,UAAU;AACZ;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;EAC7B,YAAY;EACZ,eAAe;EACf,sCAAsC;EACtC,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,MAAM;EACN,WAAW;AACb;;AAEA;EACE,YAAY;EACZ,QAAQ;EACR,QAAQ;EACR;AACF;;AAEA;EACE,gBAAgB;EAChB,6BAA6B;EAC7B,YAAY;EACZ,YAAY;EACZ,gBAAgB;EAChB,WAAW;EACX,4BAA4B;AAC9B;;AAEA;EACE,UAAU;EACV,gBAAgB;AAClB;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,kBAAkB;EAClB,mCAAmC;EACnC,mCAAqB;EACrB,aAAa;AACf;;AAEA;EACE,kBAAkB;EAClB,kCAAkC;EAClC,aAAa;EACb,mCAAqB;EACrB,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,YAAY;EACZ,WAAW;EACX,oBAAoB;AACtB;;AAEA;EACE,KAAK,UAAU,EAAE;EACjB,OAAO,UAAU,EAAE;AACrB;;AAEA;EACE,kBAAkB;EAClB,SAAS;EACT,2BAA2B;EAC3B,cAAc;EACd,yBAAyB;EACzB,uBAAuB;EACvB,kBAAkB;EAClB,mBAAmB;EACnB,WAAW;AACb;;AAEA,mDAAmD,gBAAgB;EACjE;IACE,cAAc;EAChB;EACA;IACE,WAAW;EACb;EACA;IACE,YAAY;IACZ,4BAA4B;EAC9B;EACA;IACE,cAAc;IACd,mCAAmC;IACnC,kBAAkB;EACpB;EACA;IACE,YAAY;EACd;EACA;IACE,cAAc;EAChB;IACE,0BAA0B;EAC5B;IACE;MACE,gDAAgD;MAChD,gCAAgC;IAClC;EACF;AACF","sourcesContent":["#profile-icon {\n  position: relative;\n  border-radius: 20%;\n  width: 10vw;\n  height: 12vw;\n  min-width: 100px;\n  min-height: 120px;\n  background-size: 400%;\n  background-position: top;\n  transition: background-position-y 0.3s ease-out;\n}\n\n#profile-icon img {\n  position: absolute;\n  top: 55%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  height: 90%;\n  z-index: 2;\n}\n\n#top-bar {\n  display: flex;\n  align-items: center;\n  justify-content: space-around;\n  width: 100vw;\n  cursor: pointer;\n  background-color: rgba(5, 5, 5, 0.356);\n  padding: 10px 0 10px 0;\n  border-radius: 10px;\n}\n\n#top-element {\n  position: fixed;\n  top: 0;\n  z-index: 10;\n}\n\n#bar {\n  height: .2vw;\n  rx: .1vw;\n  ry: .1vw;\n  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255))\n}\n\n.top-buttons {\n  font-weight: 100;\n  background-color: transparent;\n  color: white;\n  border: none;\n  font-size: 1.5vw;\n  opacity: .7;\n  transition: opacity .4s ease;\n}\n\n.top-buttons:hover {\n  opacity: 1;\n  font-weight: 300;\n}\n\n#phone-animator {\n  width: 22vw;\n}\n\n#laptop-animator {\n  width: 58vw;\n}\n\n#phoneImg {\n  position: absolute;\n  transform: translate(-106.6%, 2.7%);\n  animation: fadeIn .5s;\n  width: 22.1vw;\n}\n\n#laptopImg {\n  position: absolute;\n  transform: translate(-154.1%, 35%);\n  width: 28.2vw;\n  animation: fadeIn .5s;\n  border-radius: .3vw;\n}\n\n#scroll-bar {\n  position: absolute;\n  width: 100vw;\n  z-index: -1;\n  pointer-events: none;\n}\n\n@keyframes fadeIn {\n  0% { opacity: 0; }\n  100% { opacity: 1; }\n}\n\n.thankyou-error {\n  position: relative;\n  left: 50%;\n  transform: translateX(-50%);\n  font-size: 2vw;\n  color: rgb(255, 255, 255);\n  background-color: green;\n  width: fit-content;\n  border-radius: .5vw;\n  margin: 1em;\n}\n\n@media screen and (min-height: calc(100vw / .7)) { /* Mobile view */\n  .top-buttons {\n    font-size: 3vw;\n  }\n  #phone-animator, #phoneImg {\n    width: 70vw;\n  }\n  #laptop-animator {\n    width: 150vw;\n    transform: translateX(-23vw);\n  }\n  #laptopImg {\n    width: 72.75vw;\n    transform: translate(-48.5%, -174%);\n    border-radius: 1vw;\n  }\n  #bar {\n    height: .5vw;\n  }\n  .thankyou-error {\n    font-size: 3vw;\n  }\n    /* Firefox-specific rule */\n  @supports (-moz-appearance: none) {\n    #laptopImg {\n      /* Adjust the properties as needed for Firefox */\n      transform: translate(-186%, 35%);\n    }\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"profile-icon": `EoTcwxGYcyMrFE02Tiql`,
@@ -10525,7 +11241,8 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"phoneImg": `ZrlHGh90r7a3Ebb3FJ6s`,
 	"fadeIn": `sFn33cLMm9pfENciX0oQ`,
 	"laptopImg": `RMR5wPuxH_c79CLmZNZP`,
-	"scroll-bar": `jaB7Pzk0gQog4RqEBEIK`
+	"scroll-bar": `jaB7Pzk0gQog4RqEBEIK`,
+	"thankyou-error": `ucT_n_l1NqCuslqMMej7`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11113,8 +11830,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HomePage_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HomePage.jsx */ "./client/src/HomePage.jsx");
 /* harmony import */ var _smallWidgets_TopBar_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./smallWidgets/TopBar.jsx */ "./client/src/smallWidgets/TopBar.jsx");
 /* harmony import */ var _ProjectPage_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ProjectPage.jsx */ "./client/src/ProjectPage.jsx");
-/* harmony import */ var _AboutContact_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AboutContact.jsx */ "./client/src/AboutContact.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _SmallProjectPage_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./SmallProjectPage.jsx */ "./client/src/SmallProjectPage.jsx");
+/* harmony import */ var _About_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./About.jsx */ "./client/src/About.jsx");
+/* harmony import */ var _Contact_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Contact.jsx */ "./client/src/Contact.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return { value: void 0, done: !0 }; } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable || "" === iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } throw new TypeError(_typeof(iterable) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -11134,6 +11853,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 var App = function App() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
     _useState2 = _slicedToArray(_useState, 2),
@@ -11141,29 +11862,55 @@ var App = function App() {
     setIsLoading = _useState2[1];
   var preloadImages = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-      var namesAndAmount, etcImages, imagePromises;
-      return _regeneratorRuntime().wrap(function _callee$(_context) {
-        while (1) switch (_context.prev = _context.next) {
+      var namesAndAmount, etcImages, imagePromises, name, _loop, frameNumber;
+      return _regeneratorRuntime().wrap(function _callee$(_context2) {
+        while (1) switch (_context2.prev = _context2.next) {
           case 0:
-            namesAndAmount = [{
-              phone: 13
-            }, {
+            namesAndAmount = {
+              phone: 13,
               laptop: 11
-            }];
-            etcImages = ['lake.jpg', 'me.png', '/projects/fec.gif', '/projects/ledcanvas.gif', '/projects/toyshare.gif'];
+            };
+            etcImages = ['lake.jpg', 'me.png', '/projects/fec.gif', '/projects/ledcanvas.gif', '/projects/toyshare.gif', './projects/multiplayerGame.gif'];
             imagePromises = [];
-            namesAndAmount.forEach(function (imgInfo) {
-              var _loop = function _loop() {
-                var image = new window.Image();
-                image.src = "./images/".concat(imgInfo.name, "/").concat(frameNumber, ".png");
-                imagePromises.push(new Promise(function (resolve) {
-                  return image.onload = resolve;
-                }));
-              };
-              for (var frameNumber = 1; frameNumber <= imgInfo.amount; frameNumber++) {
-                _loop();
-              }
+            _context2.t0 = _regeneratorRuntime().keys(namesAndAmount);
+          case 4:
+            if ((_context2.t1 = _context2.t0()).done) {
+              _context2.next = 15;
+              break;
+            }
+            name = _context2.t1.value;
+            _loop = /*#__PURE__*/_regeneratorRuntime().mark(function _loop() {
+              var image;
+              return _regeneratorRuntime().wrap(function _loop$(_context) {
+                while (1) switch (_context.prev = _context.next) {
+                  case 0:
+                    image = new window.Image();
+                    image.src = "./images/".concat(name, "/").concat(frameNumber, ".png");
+                    imagePromises.push(new Promise(function (resolve) {
+                      return image.onload = resolve;
+                    }));
+                  case 3:
+                  case "end":
+                    return _context.stop();
+                }
+              }, _loop);
             });
+            frameNumber = 1;
+          case 8:
+            if (!(frameNumber <= namesAndAmount[name])) {
+              _context2.next = 13;
+              break;
+            }
+            return _context2.delegateYield(_loop(), "t2", 10);
+          case 10:
+            frameNumber++;
+            _context2.next = 8;
+            break;
+          case 13:
+            _context2.next = 4;
+            break;
+          case 15:
+            ;
             etcImages.forEach(function (imgName) {
               console.log(imgName);
               var image = new window.Image();
@@ -11172,13 +11919,13 @@ var App = function App() {
                 return image.onload = resolve;
               }));
             });
-            _context.next = 7;
+            _context2.next = 19;
             return Promise.all(imagePromises);
-          case 7:
+          case 19:
             setIsLoading(false);
-          case 8:
+          case 20:
           case "end":
-            return _context.stop();
+            return _context2.stop();
         }
       }, _callee);
     }));
@@ -11187,32 +11934,35 @@ var App = function App() {
     };
   }();
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(preloadImages, []);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
     id: "app",
     className: "w-full",
-    children: isLoading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    children: isLoading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
       id: "loading",
-      children: ["BradyBaker", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("img", {
+      children: ["BradyBaker", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
         src: "./images/icons/loading.gif"
       })]
-    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_HomePage_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_ProjectPage_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_AboutContact_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_smallWidgets_TopBar_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_HomePage_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_About_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ProjectPage_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_SmallProjectPage_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Contact_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_smallWidgets_TopBar_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         className: "credit",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("a", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
           href: "https://www.freepik.com/free-vector/home-screen-concept-illustration_11906660.htm#query=phone&position=0&from_view=author",
           children: "Phone Image by StorySet"
         }), " on Freepik"]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("a", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
         className: "credit",
         href: "https://www.youtube.com/channel/UCTU68v8yc35q-1u087DgMWw",
         children: "Laptop Art from GrafixM"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+        id: "ps",
+        children: " P.S. This website was meticulously crafted from the ground up by me Brady Baker, with a touch of artistry in every line of code."
       })]
     })
   });
 };
 var domNode = document.getElementById('root');
 var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(domNode);
-root.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(App, {}));
+root.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(App, {}));
 })();
 
 /******/ })()
