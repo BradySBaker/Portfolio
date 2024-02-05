@@ -45,7 +45,8 @@ const Project = ({ title, desc, gif, contributions, type, link, title2, link2, t
             </div>
           : null}
         {title2 ? <h3 onClick={() => linkClick(link2)}>{title2}</h3> : null}
-        {title3 ? <h3 onClick={() => linkClick(link3)}>{title3}</h3> : null}      </div>
+        {title3 ? <h3 onClick={() => linkClick(link3)}>{title3}</h3> : null}
+        </div>
 
   </div>
   );

@@ -23,7 +23,9 @@
 .project {
   display: flex;
   justify-content: space-between;
-  margin: 0 5vw 0 5vw;
+  border: 1px solid rgb(133, 133, 133);
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 #widget h2,
@@ -114,10 +116,11 @@
 #library-contr-button:hover { background-color: #002fff; }
 
 #ps {
+  position: absolute;
   font-size: .7vw;
   font-style: italic;
   max-width: 15vw;
-  transform: translate(128%, 220%);
+  transform: translate(100%, 150%);
   color: rgba(255, 255, 255, 0.233);
   font-weight: 300;
 }
@@ -194,6 +197,38 @@
     font-size: 2vw;
     font-style: italic;
     max-width: 40vw;
-    transform: translate(75%, 250%);
+    transform: translate(75%, 200%);
+  }
+  .smallProject {
+    width: 100%;
+  }
+  #widget.SmallProjectPage h3 {
+    font-size: 4vw;
+  }
+  #widget.SmallProjectPage p {
+    font-size: 3vw;
+  }
+  #widget.SmallProjectPage {
+    margin-top: 400px;
+    margin-bottom: 300px;
   }
 }
+
+#smallProjectButton {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -130%);
+}
+
+#widget.SmallProjectPage h3 {
+  max-height: 3vw;
+}
+
+.smallProject {
+  display: flex;
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+}
+

@@ -15,6 +15,7 @@ const ProjectPage = () => {
       <Project title={'Grace Outfitters'} title2={'Backend'} link={'https://github.com/site-of-grace/FEC'} desc={projectInfo.fec.desc} libraries={projectInfo.fec.libraries} gif={'./images/projects/fec.gif'} contributions={projectInfo.fec.contributions} type={'laptop'} link2={'https://github.com/rpp2210-sdc-freesia/product-overview'}/>
       <div id={styles.ps}>This is just a video of the app click the video link below to see the device/app working in conjunction</div>
       <Project title={'LED Canvas'} title2={'Arduino'} title3={'Video Of Device'} gif={'./images/projects/ledcanvas.gif'} desc={projectInfo.ledCanvas.desc} contributions={projectInfo.ledCanvas.contributions} libraries={projectInfo.ledCanvas.libraries} link={'https://github.com/BradySBaker/LED-Canvas-Frontend'} link2={'https://github.com/BradySBaker/LED-Canvas-Arduino'} link3={'https://www.youtube.com/watch?v=rL2p1DnfBfw'} type={'phone'}/>
+      <Project title={'Multiplayer Web Game'} gif={'./images/projects/multiplayerGame.gif'} desc={projectInfo.multiplayerGame.desc} contributions={projectInfo.multiplayerGame.contributions} libraries={projectInfo.multiplayerGame.libraries} link={'https://github.com/BradySBaker/TypeScript-SocketIO-Phaser-Game'}  type={'laptop'}/>
   </div>
   );
 };

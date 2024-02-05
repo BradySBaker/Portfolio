@@ -14,5 +14,10 @@ export default {
     contributions: [{ text: 'Solo Project', style: { backgroundColor: 'rgba(255, 0, 0, 0.466)' } }],
     desc: 'LED Canvas is an interactive pixel art device controlled via Bluetooth. There is a mobile-first web app to control the device, although it works on desktop. The device itself consists of an Arduino controller, microphone, Bluetooth module, 16x16 LED grid, and a custom 3D-printed casing.',
     libraries: ['Arduino', 'React', 'P5ble', 'FastLED', 'React-Color', 'babel', 'css-loader/style-loader']
+  },
+  multiplayerGame: {
+    contributions: [{ text: 'Work In Progress', style: { backgroundColor: 'rgba(255, 0, 0, 0.466)' }}, { text: 'Solo Project', style: { backgroundColor: 'rgba(255, 0, 0, 0.466)' } }],
+    desc: 'This multiplayer survival web game offers crafting, creature encounters, throwable weapons, and resource gathering in a randomly generated terrain. Crafted with TypeScript ensuring code reliability, Phaser.js providing smooth gameplay, and Socket.IO enabling seamless multiplayer interactions',
+    libraries: ['TypeScript', 'Socket.IO', 'Phaser.js', 'Parcel', 'React']
   }
 };

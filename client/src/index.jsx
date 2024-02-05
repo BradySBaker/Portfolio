@@ -5,6 +5,7 @@ import HomePage from './HomePage.jsx';
 import TopBar from './smallWidgets/TopBar.jsx';
 
 import ProjectPage from './ProjectPage.jsx';
+import SmallProjectPage from './SmallProjectPage.jsx';
 import About from './About.jsx';
 import Contact from './Contact.jsx';
 
@@ -13,7 +14,7 @@ const App = () => {
 
   const preloadImages = async () => {
     const namesAndAmount = { phone: 13, laptop: 11 };
-    const etcImages = ['lake.jpg', 'me.png', '/projects/fec.gif', '/projects/ledcanvas.gif', '/projects/toyshare.gif'];
+    const etcImages = ['lake.jpg', 'me.png', '/projects/fec.gif', '/projects/ledcanvas.gif', '/projects/toyshare.gif', './projects/multiplayerGame.gif'];
     const imagePromises = [];
     for (const name in namesAndAmount) {
       for (let frameNumber = 1; frameNumber <= namesAndAmount[name]; frameNumber++) {
@@ -46,6 +47,7 @@ const App = () => {
         <HomePage />
         <About />
         <ProjectPage />
+        <SmallProjectPage />
         <Contact />
         <TopBar />
         <div className='credit'><a href="https://www.freepik.com/free-vector/home-screen-concept-illustration_11906660.htm#query=phone&position=0&from_view=author">Phone Image by StorySet</a> on Freepik</div>

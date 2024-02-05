@@ -13,5 +13,8 @@ export default {
   'EC2/S3': 'EC2 (Elastic Compute Cloud) provides scalable compute capacity, while S3 (Simple Storage Service) offers scalable object storage in AWS.',
   'Babel.js': 'Babel.js is a transpiler that converts modern JavaScript code into older versions for better browser compatibility.',
   Jest: 'Jest is a popular JavaScript testing framework known for its simplicity and speed.',
-  NginX: 'NginX is a web server that can also act as a reverse proxy, load balancer, and more.'
+  NginX: 'NginX is a web server that can also act as a reverse proxy, load balancer, and more.',
+  Python: 'Python is an interpreted, object-oriented, high-level programming language with dynamic semantics developed by Guido van Rossum',
+  'Socket.IO': 'Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server',
+  TypeScript: 'TypeScript is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript'
 };

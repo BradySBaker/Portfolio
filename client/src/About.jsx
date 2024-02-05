@@ -4,7 +4,7 @@ import styles from './cssModules/aboutContact.module.css';
 
 import skillInfo from './skillInfo';
 
-const skills = ['JavaScript', 'HTML', 'CSS', 'React.js', 'Git', 'Node.js', 'Docker', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redux', 'EC2/S3', 'Babel.js', 'Jest', 'NginX', 'Collaboration', 'Many More'];
+const skills = ['JavaScript', 'HTML', 'CSS', 'TypeScript',  'React.js', 'Git', 'Node.js', 'Docker', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redux', 'EC2/S3', 'Babel.js', 'Jest', 'NginX', 'Python', 'Socket.IO', 'Collaboration', 'Many More'];
 
 const About = () => {
   const [infoDisplay, setInfoDisplay] = useState(false);
