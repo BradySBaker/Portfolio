@@ -115,6 +115,25 @@
 
 #library-contr-button:hover { background-color: #002fff; }
 
+
+#smallProjectButton {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -130%);
+}
+
+#widget.SmallProjectPage h3 {
+  max-height: 3vw;
+}
+
+.smallProject {
+  display: flex;
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+}
+
 #ps {
   position: absolute;
   font-size: .7vw;
@@ -203,7 +222,9 @@
     width: 100%;
   }
   #widget.SmallProjectPage h3 {
-    font-size: 4vw;
+    font-size: 3.3vw;
+    background-color: red;
+    max-height: 10vw;
   }
   #widget.SmallProjectPage p {
     font-size: 3vw;
@@ -212,23 +233,5 @@
     margin-top: 400px;
     margin-bottom: 300px;
   }
-}
-
-#smallProjectButton {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -130%);
-}
-
-#widget.SmallProjectPage h3 {
-  max-height: 3vw;
-}
-
-.smallProject {
-  display: flex;
-  position: relative;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 50px;
 }
 
